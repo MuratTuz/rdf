@@ -1,0 +1,727 @@
+@prefix xsd: <http://w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://w3.org/2000/01/rdf-schema#>.
+@prefix geo: <https://w3.org/wiki/GeoRDF#>.
+@prefix wikidata: <https://www.wikidata.org/wiki/>.
+@prefix dbpedia: <http://dbpedia.org/ontology/>.
+@prefix osm: <http://openstreetmap.org/export/>.
+@prefix : <http://topografix.com/GPX/1/1/>.
+
+
+:trk :name "Refuge Maison Vieille - Refuge Bertone".
+
+:trkpt rdf:type :ptType; geo:lat "45.790956"^^xsd:float; geo:lon "6.931023"^^xsd:float; :id "0"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790777"^^xsd:float; geo:lon "6.932203"^^xsd:float; :id "1"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791196"^^xsd:float; geo:lon "6.932783"^^xsd:float; :id "2"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791495"^^xsd:float; geo:lon "6.935014"^^xsd:float; :id "3"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.793051"^^xsd:float; geo:lon "6.936537"^^xsd:float; :id "4"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792542"^^xsd:float; geo:lon "6.937159"^^xsd:float; :id "5"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792224"^^xsd:float; geo:lon "6.937589"^^xsd:float; :id "6"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.79179"^^xsd:float; geo:lon "6.93776"^^xsd:float; :id "7"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791824"^^xsd:float; geo:lon "6.939306"^^xsd:float; :id "8"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792104"^^xsd:float; geo:lon "6.941322"^^xsd:float; :id "9"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792254"^^xsd:float; geo:lon "6.943382"^^xsd:float; :id "10"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792119"^^xsd:float; geo:lon "6.945099"^^xsd:float; :id "11"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791525"^^xsd:float; geo:lon "6.945743"^^xsd:float; :id "12"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790907"^^xsd:float; geo:lon "6.945313"^^xsd:float; :id "13"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790717"^^xsd:float; geo:lon "6.945786"^^xsd:float; :id "14"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790309"^^xsd:float; geo:lon "6.94512"^^xsd:float; :id "15"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789729"^^xsd:float; geo:lon "6.944927"^^xsd:float; :id "16"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789206"^^xsd:float; geo:lon "6.945442"^^xsd:float; :id "17"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.78968"^^xsd:float; geo:lon "6.945528"^^xsd:float; :id "18"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790141"^^xsd:float; geo:lon "6.945785"^^xsd:float; :id "19"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790249"^^xsd:float; geo:lon "6.946944"^^xsd:float; :id "20"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790238"^^xsd:float; geo:lon "6.948017"^^xsd:float; :id "21"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790353"^^xsd:float; geo:lon "6.948682"^^xsd:float; :id "22"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790728"^^xsd:float; geo:lon "6.949305"^^xsd:float; :id "23"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790877"^^xsd:float; geo:lon "6.950013"^^xsd:float; :id "24"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790129"^^xsd:float; geo:lon "6.949326"^^xsd:float; :id "25"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790234"^^xsd:float; geo:lon "6.950807"^^xsd:float; :id "26"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790605"^^xsd:float; geo:lon "6.951054"^^xsd:float; :id "27"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790772"^^xsd:float; geo:lon "6.951493"^^xsd:float; :id "28"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790941"^^xsd:float; geo:lon "6.952073"^^xsd:float; :id "29"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791072"^^xsd:float; geo:lon "6.952845"^^xsd:float; :id "30"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790772"^^xsd:float; geo:lon "6.953231"^^xsd:float; :id "31"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790757"^^xsd:float; geo:lon "6.954004"^^xsd:float; :id "32"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790477"^^xsd:float; geo:lon "6.955056"^^xsd:float; :id "33"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790099"^^xsd:float; geo:lon "6.954047"^^xsd:float; :id "34"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789759"^^xsd:float; geo:lon "6.953253"^^xsd:float; :id "35"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789246"^^xsd:float; geo:lon "6.952459"^^xsd:float; :id "36"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788513"^^xsd:float; geo:lon "6.951987"^^xsd:float; :id "37"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788289"^^xsd:float; geo:lon "6.952266"^^xsd:float; :id "38"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788756"^^xsd:float; geo:lon "6.95321"^^xsd:float; :id "39"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788124"^^xsd:float; geo:lon "6.953553"^^xsd:float; :id "40"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788184"^^xsd:float; geo:lon "6.954025"^^xsd:float; :id "41"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788954"^^xsd:float; geo:lon "6.954937"^^xsd:float; :id "42"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788827"^^xsd:float; geo:lon "6.955892"^^xsd:float; :id "43"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788618"^^xsd:float; geo:lon "6.956686"^^xsd:float; :id "44"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788468"^^xsd:float; geo:lon "6.957737"^^xsd:float; :id "45"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788906"^^xsd:float; geo:lon "6.958746"^^xsd:float; :id "46"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788857"^^xsd:float; geo:lon "6.960656"^^xsd:float; :id "47"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789097"^^xsd:float; geo:lon "6.9619"^^xsd:float; :id "48"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789519"^^xsd:float; geo:lon "6.962995"^^xsd:float; :id "49"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789905"^^xsd:float; geo:lon "6.963617"^^xsd:float; :id "50"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790058"^^xsd:float; geo:lon "6.964475"^^xsd:float; :id "51"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.789381"^^xsd:float; geo:lon "6.964754"^^xsd:float; :id "52"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.788741"^^xsd:float; geo:lon "6.965258"^^xsd:float; :id "53"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790477"^^xsd:float; geo:lon "6.96587"^^xsd:float; :id "54"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791794"^^xsd:float; geo:lon "6.965698"^^xsd:float; :id "55"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792493"^^xsd:float; geo:lon "6.966921"^^xsd:float; :id "56"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792643"^^xsd:float; geo:lon "6.967823"^^xsd:float; :id "57"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792003"^^xsd:float; geo:lon "6.968874"^^xsd:float; :id "58"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791281"^^xsd:float; geo:lon "6.969239"^^xsd:float; :id "59"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791266"^^xsd:float; geo:lon "6.970204"^^xsd:float; :id "60"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790952"^^xsd:float; geo:lon "6.971127"^^xsd:float; :id "61"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.790742"^^xsd:float; geo:lon "6.972286"^^xsd:float; :id "62"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792164"^^xsd:float; geo:lon "6.972329"^^xsd:float; :id "63"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.791685"^^xsd:float; geo:lon "6.972908"^^xsd:float; :id "64"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792164"^^xsd:float; geo:lon "6.973123"^^xsd:float; :id "65"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.792957"^^xsd:float; geo:lon "6.973423"^^xsd:float; :id "66"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.793989"^^xsd:float; geo:lon "6.97411"^^xsd:float; :id "67"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.795085"^^xsd:float; geo:lon "6.97441"^^xsd:float; :id "68"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.795994"^^xsd:float; geo:lon "6.975376"^^xsd:float; :id "69"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.797415"^^xsd:float; geo:lon "6.976019"^^xsd:float; :id "70"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.799094"^^xsd:float; geo:lon "6.978294"^^xsd:float; :id "71"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.799932"^^xsd:float; geo:lon "6.979517"^^xsd:float; :id "72"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.80077"^^xsd:float; geo:lon "6.980547"^^xsd:float; :id "73"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.800979"^^xsd:float; geo:lon "6.981405"^^xsd:float; :id "74"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.801009"^^xsd:float; geo:lon "6.982178"^^xsd:float; :id "75"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.800501"^^xsd:float; geo:lon "6.982779"^^xsd:float; :id "76"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.800665"^^xsd:float; geo:lon "6.984109"^^xsd:float; :id "77"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.801219"^^xsd:float; geo:lon "6.985225"^^xsd:float; :id "78"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.801458"^^xsd:float; geo:lon "6.985139"^^xsd:float; :id "79"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.801323"^^xsd:float; geo:lon "6.984538"^^xsd:float; :id "80"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.801697"^^xsd:float; geo:lon "6.984495"^^xsd:float; :id "81"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.801772"^^xsd:float; geo:lon "6.983766"^^xsd:float; :id "82"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.802162"^^xsd:float; geo:lon "6.982886"^^xsd:float; :id "83"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.80255"^^xsd:float; geo:lon "6.984624"^^xsd:float; :id "84"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.803193"^^xsd:float; geo:lon "6.984881"^^xsd:float; :id "85"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.803059"^^xsd:float; geo:lon "6.985933"^^xsd:float; :id "86"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.803403"^^xsd:float; geo:lon "6.985632"^^xsd:float; :id "87"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.803702"^^xsd:float; geo:lon "6.985976"^^xsd:float; :id "88"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.803747"^^xsd:float; geo:lon "6.985504"^^xsd:float; :id "89"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.80421"^^xsd:float; geo:lon "6.985826"^^xsd:float; :id "90"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.80421"^^xsd:float; geo:lon "6.985246"^^xsd:float; :id "91"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.804539"^^xsd:float; geo:lon "6.985311"^^xsd:float; :id "92"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.804809"^^xsd:float; geo:lon "6.983722"^^xsd:float; :id "93"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.805707"^^xsd:float; geo:lon "6.984838"^^xsd:float; :id "94"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.806021"^^xsd:float; geo:lon "6.983744"^^xsd:float; :id "95"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.806754"^^xsd:float; geo:lon "6.983422"^^xsd:float; :id "96"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.806544"^^xsd:float; geo:lon "6.982113"^^xsd:float; :id "97"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807157"^^xsd:float; geo:lon "6.982028"^^xsd:float; :id "98"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807262"^^xsd:float; geo:lon "6.981287"^^xsd:float; :id "99"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807127"^^xsd:float; geo:lon "6.979903"^^xsd:float; :id "100"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.806963"^^xsd:float; geo:lon "6.979217"^^xsd:float; :id "101"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807128"^^xsd:float; geo:lon "6.978599"^^xsd:float; :id "102"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807367"^^xsd:float; geo:lon "6.978272"^^xsd:float; :id "103"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807419"^^xsd:float; geo:lon "6.97747"^^xsd:float; :id "104"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.807905"^^xsd:float; geo:lon "6.977972"^^xsd:float; :id "105"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.80807"^^xsd:float; geo:lon "6.977307"^^xsd:float; :id "106"^^xsd:int.
+:trkpt rdf:type :ptType; geo:lat "45.808638"^^xsd:float; geo:lon "6.9778"^^xsd:float; :id "107"^^xsd:int.
+osm:node rdf:type osm:node; geo:lat "45.7925897"^^xsd:float; geo:lon "6.9638265"^^xsd:float; osm:id "251790899"^^xsd:int.
+osm:tag osm:id "251790899"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "251790899"^^xsd:int; osm:key "ele:local"; osm:val "1211".
+osm:tag osm:id "251790899"^^xsd:int; osm:key "name"; osm:val "Dolonne".
+osm:node rdf:type osm:node; geo:lat "45.7904273"^^xsd:float; geo:lon "6.9434554"^^xsd:float; osm:id "251791957"^^xsd:int.
+osm:tag osm:id "251791957"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "251791957"^^xsd:int; osm:key "aerialway:access"; osm:val "entry".
+osm:tag osm:id "251791957"^^xsd:int; osm:key "name"; osm:val "Checrouit".
+osm:node rdf:type osm:node; geo:lat "45.7826704"^^xsd:float; geo:lon "6.9235971"^^xsd:float; osm:id "251791958"^^xsd:int.
+osm:tag osm:id "251791958"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "251791958"^^xsd:int; osm:key "aerialway:access"; osm:val "exit".
+osm:tag osm:id "251791958"^^xsd:int; osm:key "name"; osm:val "Checrouit".
+osm:node rdf:type osm:node; geo:lat "45.7909264"^^xsd:float; geo:lon "6.9462081"^^xsd:float; osm:id "251791959"^^xsd:int.
+osm:tag osm:id "251791959"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "251791959"^^xsd:int; osm:key "aerialway:access"; osm:val "entry".
+osm:tag osm:id "251791959"^^xsd:int; osm:key "ele:local"; osm:val "1688".
+osm:tag osm:id "251791959"^^xsd:int; osm:key "name"; osm:val "Pra Neyron".
+osm:node rdf:type osm:node; geo:lat "45.8004011"^^xsd:float; geo:lon "6.9244199"^^xsd:float; osm:id "251798920"^^xsd:int.
+osm:tag osm:id "251798920"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "251798920"^^xsd:int; osm:key "ele:local"; osm:val "1525".
+osm:tag osm:id "251798920"^^xsd:int; osm:key "name"; osm:val "Zerotta".
+osm:node rdf:type osm:node; geo:lat "45.7988031"^^xsd:float; geo:lon "6.9396086"^^xsd:float; osm:id "251798921"^^xsd:int.
+osm:tag osm:id "251798921"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "251798921"^^xsd:int; osm:key "ele:local"; osm:val "2080".
+osm:tag osm:id "251798921"^^xsd:int; osm:key "name"; osm:val "Zerotta".
+osm:node rdf:type osm:node; geo:lat "45.7948262"^^xsd:float; geo:lon "6.9338623"^^xsd:float; osm:id "251818853"^^xsd:int.
+osm:tag osm:id "251818853"^^xsd:int; osm:key "created_by"; osm:val "JOSM".
+osm:node rdf:type osm:node; geo:lat "45.7956741"^^xsd:float; geo:lon "6.9351765"^^xsd:float; osm:id "251818854"^^xsd:int.
+osm:tag osm:id "251818854"^^xsd:int; osm:key "created_by"; osm:val "JOSM".
+osm:node rdf:type osm:node; geo:lat "45.7908628"^^xsd:float; geo:lon "6.9313349"^^xsd:float; osm:id "289451082"^^xsd:int.
+osm:tag osm:id "289451082"^^xsd:int; osm:key "ele"; osm:val "1952".
+osm:tag osm:id "289451082"^^xsd:int; osm:key "mountain_pass"; osm:val "yes".
+osm:tag osm:id "289451082"^^xsd:int; osm:key "name"; osm:val "ColChécrouit".
+osm:tag osm:id "289451082"^^xsd:int; osm:key "natural"; osm:val "saddle".
+osm:node rdf:type osm:node; geo:lat "45.7909070"^^xsd:float; geo:lon "6.9703923"^^xsd:float; osm:id "307696230"^^xsd:int.
+osm:tag osm:id "307696230"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7907870"^^xsd:float; geo:lon "6.9310687"^^xsd:float; osm:id "353086852"^^xsd:int.
+osm:tag osm:id "353086852"^^xsd:int; osm:key "ele"; osm:val "1955".
+osm:tag osm:id "353086852"^^xsd:int; osm:key "name"; osm:val "Rifugio - Restaurante Maison Vieille".
+osm:tag osm:id "353086852"^^xsd:int; osm:key "source"; osm:val "CAI Valle d'Aosta".
+osm:tag osm:id "353086852"^^xsd:int; osm:key "tourism"; osm:val "alpine_hut".
+osm:node rdf:type osm:node; geo:lat "45.8067778"^^xsd:float; geo:lon "6.9310488"^^xsd:float; osm:id "437564423"^^xsd:int.
+osm:tag osm:id "437564423"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.7907689"^^xsd:float; geo:lon "6.9704039"^^xsd:float; osm:id "825761518"^^xsd:int.
+osm:tag osm:id "825761518"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7938836"^^xsd:float; geo:lon "6.9378276"^^xsd:float; osm:id "850806762"^^xsd:int.
+osm:tag osm:id "850806762"^^xsd:int; osm:key "ele"; osm:val "1895".
+osm:tag osm:id "850806762"^^xsd:int; osm:key "name"; osm:val "Rifugio Le Randonneur".
+osm:tag osm:id "850806762"^^xsd:int; osm:key "tourism"; osm:val "alpine_hut".
+osm:node rdf:type osm:node; geo:lat "45.7996936"^^xsd:float; geo:lon "6.9488029"^^xsd:float; osm:id "963399583"^^xsd:int.
+osm:tag osm:id "963399583"^^xsd:int; osm:key "ele"; osm:val "2343".
+osm:tag osm:id "963399583"^^xsd:int; osm:key "name"; osm:val "Mont Chetif".
+osm:tag osm:id "963399583"^^xsd:int; osm:key "natural"; osm:val "peak".
+osm:tag osm:id "963399583"^^xsd:int; osm:key "wikidata"; osm:val "Q3861450".
+osm:tag osm:id "963399583"^^xsd:int; osm:key "wikipedia"; osm:val "it:Monte Chétif".
+osm:node rdf:type osm:node; geo:lat "45.8037510"^^xsd:float; geo:lon "6.9347316"^^xsd:float; osm:id "1082755430"^^xsd:int.
+osm:tag osm:id "1082755430"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "1082755430"^^xsd:int; osm:key "name"; osm:val "La Grolla".
+osm:node rdf:type osm:node; geo:lat "45.7894854"^^xsd:float; geo:lon "6.9357642"^^xsd:float; osm:id "1109817481"^^xsd:int.
+osm:tag osm:id "1109817481"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1109817481"^^xsd:int; osm:key "aerialway:access"; osm:val "entry".
+osm:tag osm:id "1109817481"^^xsd:int; osm:key "ele:local"; osm:val "1895".
+osm:tag osm:id "1109817481"^^xsd:int; osm:key "name"; osm:val "Aretù".
+osm:node rdf:type osm:node; geo:lat "45.8137488"^^xsd:float; geo:lon "6.9572310"^^xsd:float; osm:id "1109817490"^^xsd:int.
+osm:tag osm:id "1109817490"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1109817490"^^xsd:int; osm:key "name"; osm:val "Val Veny".
+osm:node rdf:type osm:node; geo:lat "45.7855889"^^xsd:float; geo:lon "6.9330659"^^xsd:float; osm:id "1109817528"^^xsd:int.
+osm:tag osm:id "1109817528"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1109817528"^^xsd:int; osm:key "aerialway:access"; osm:val "entry".
+osm:tag osm:id "1109817528"^^xsd:int; osm:key "name"; osm:val "La Greye".
+osm:node rdf:type osm:node; geo:lat "45.7823126"^^xsd:float; geo:lon "6.9214352"^^xsd:float; osm:id "1109817600"^^xsd:int.
+osm:tag osm:id "1109817600"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1109817600"^^xsd:int; osm:key "aerialway:access"; osm:val "exit".
+osm:tag osm:id "1109817600"^^xsd:int; osm:key "ele:local"; osm:val "2250".
+osm:tag osm:id "1109817600"^^xsd:int; osm:key "name"; osm:val "Aretù".
+osm:node rdf:type osm:node; geo:lat "45.7912679"^^xsd:float; geo:lon "6.9427314"^^xsd:float; osm:id "1117737524"^^xsd:int.
+osm:tag osm:id "1117737524"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "1117737524"^^xsd:int; osm:key "name"; osm:val "La Chaumière".
+osm:node rdf:type osm:node; geo:lat "45.7852337"^^xsd:float; geo:lon "6.9706102"^^xsd:float; osm:id "1117737734"^^xsd:int.
+osm:tag osm:id "1117737734"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117737734"^^xsd:int; osm:key "aerialway:access"; osm:val "both".
+osm:tag osm:id "1117737734"^^xsd:int; osm:key "aerialway:summer:access"; osm:val "both".
+osm:tag osm:id "1117737734"^^xsd:int; osm:key "name"; osm:val "Courmayeur".
+osm:node rdf:type osm:node; geo:lat "45.8062780"^^xsd:float; geo:lon "6.9482432"^^xsd:float; osm:id "1117737924"^^xsd:int.
+osm:tag osm:id "1117737924"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117737924"^^xsd:int; osm:key "name"; osm:val "Val Veny".
+osm:node rdf:type osm:node; geo:lat "45.7909066"^^xsd:float; geo:lon "6.9332343"^^xsd:float; osm:id "1117738401"^^xsd:int.
+osm:tag osm:id "1117738401"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117738401"^^xsd:int; osm:key "aerialway:access"; osm:val "exit".
+osm:tag osm:id "1117738401"^^xsd:int; osm:key "aerialway:summer:access"; osm:val "both".
+osm:tag osm:id "1117738401"^^xsd:int; osm:key "ele:local"; osm:val "1960".
+osm:tag osm:id "1117738401"^^xsd:int; osm:key "name"; osm:val "Maison Vieille".
+osm:node rdf:type osm:node; geo:lat "45.8028004"^^xsd:float; geo:lon "6.9467352"^^xsd:float; osm:id "1117738473"^^xsd:int.
+osm:tag osm:id "1117738473"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117738473"^^xsd:int; osm:key "ele:local"; osm:val "2030".
+osm:tag osm:id "1117738473"^^xsd:int; osm:key "name"; osm:val "Peindeint".
+osm:node rdf:type osm:node; geo:lat "45.8016027"^^xsd:float; geo:lon "6.9318006"^^xsd:float; osm:id "1117738551"^^xsd:int.
+osm:tag osm:id "1117738551"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117738551"^^xsd:int; osm:key "ele:local"; osm:val "1664".
+osm:tag osm:id "1117738551"^^xsd:int; osm:key "name"; osm:val "Peindeint".
+osm:node rdf:type osm:node; geo:lat "45.7930727"^^xsd:float; geo:lon "6.9390375"^^xsd:float; osm:id "1117738653"^^xsd:int.
+osm:tag osm:id "1117738653"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117738653"^^xsd:int; osm:key "aerialway:access"; osm:val "entry".
+osm:tag osm:id "1117738653"^^xsd:int; osm:key "ele:local"; osm:val "1892".
+osm:tag osm:id "1117738653"^^xsd:int; osm:key "name"; osm:val "Dzeleuna".
+osm:node rdf:type osm:node; geo:lat "45.7906709"^^xsd:float; geo:lon "6.9439604"^^xsd:float; osm:id "1117738866"^^xsd:int.
+osm:tag osm:id "1117738866"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117738866"^^xsd:int; osm:key "ele:local"; osm:val "1703".
+osm:tag osm:id "1117738866"^^xsd:int; osm:key "name"; osm:val "Maison Vieille".
+osm:node rdf:type osm:node; geo:lat "45.7985173"^^xsd:float; geo:lon "6.9398787"^^xsd:float; osm:id "1117739341"^^xsd:int.
+osm:tag osm:id "1117739341"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117739341"^^xsd:int; osm:key "ele:local"; osm:val "2080".
+osm:tag osm:id "1117739341"^^xsd:int; osm:key "name"; osm:val "Dzeleuna".
+osm:node rdf:type osm:node; geo:lat "45.7916545"^^xsd:float; geo:lon "6.9471973"^^xsd:float; osm:id "1117739376"^^xsd:int.
+osm:tag osm:id "1117739376"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1117739376"^^xsd:int; osm:key "aerialway:access"; osm:val "both".
+osm:tag osm:id "1117739376"^^xsd:int; osm:key "aerialway:summer:access"; osm:val "both".
+osm:tag osm:id "1117739376"^^xsd:int; osm:key "ele:local"; osm:val "1704".
+osm:tag osm:id "1117739376"^^xsd:int; osm:key "name"; osm:val "Dolonne".
+osm:node rdf:type osm:node; geo:lat "45.7891784"^^xsd:float; geo:lon "6.9451246"^^xsd:float; osm:id "1119368645"^^xsd:int.
+osm:tag osm:id "1119368645"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1119368645"^^xsd:int; osm:key "aerialway:access"; osm:val "entry".
+osm:tag osm:id "1119368645"^^xsd:int; osm:key "name"; osm:val "Chiecco".
+osm:node rdf:type osm:node; geo:lat "45.7940576"^^xsd:float; geo:lon "6.9329512"^^xsd:float; osm:id "1119368976"^^xsd:int.
+osm:tag osm:id "1119368976"^^xsd:int; osm:key "ele"; osm:val "2035".
+osm:tag osm:id "1119368976"^^xsd:int; osm:key "name"; osm:val "Tête Neyron".
+osm:tag osm:id "1119368976"^^xsd:int; osm:key "natural"; osm:val "peak".
+osm:node rdf:type osm:node; geo:lat "45.7914245"^^xsd:float; geo:lon "6.9312821"^^xsd:float; osm:id "1119369134"^^xsd:int.
+osm:tag osm:id "1119369134"^^xsd:int; osm:key "abandoned"; osm:val "yes".
+osm:tag osm:id "1119369134"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1119369134"^^xsd:int; osm:key "comment"; osm:val "Des Eves, quota 1960, dislivello 193, p/h 650".
+osm:tag osm:id "1119369134"^^xsd:int; osm:key "ele:local"; osm:val "1960".
+osm:node rdf:type osm:node; geo:lat "45.7879891"^^xsd:float; geo:lon "6.9418943"^^xsd:float; osm:id "1119369145"^^xsd:int.
+osm:tag osm:id "1119369145"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "1119369145"^^xsd:int; osm:key "aerialway:access"; osm:val "exit".
+osm:tag osm:id "1119369145"^^xsd:int; osm:key "name"; osm:val "Chiecco".
+osm:node rdf:type osm:node; geo:lat "45.7984036"^^xsd:float; geo:lon "6.9380945"^^xsd:float; osm:id "1119369184"^^xsd:int.
+osm:tag osm:id "1119369184"^^xsd:int; osm:key "amenity"; osm:val "fast_food".
+osm:tag osm:id "1119369184"^^xsd:int; osm:key "name"; osm:val "Courba Dzeleuna".
+osm:node rdf:type osm:node; geo:lat "45.7907325"^^xsd:float; geo:lon "6.9448974"^^xsd:float; osm:id "1119369191"^^xsd:int.
+osm:tag osm:id "1119369191"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "1119369191"^^xsd:int; osm:key "name"; osm:val "Christiania".
+osm:node rdf:type osm:node; geo:lat "45.7933294"^^xsd:float; geo:lon "6.9387444"^^xsd:float; osm:id "1119369281"^^xsd:int.
+osm:tag osm:id "1119369281"^^xsd:int; osm:key "amenity"; osm:val "fast_food".
+osm:node rdf:type osm:node; geo:lat "45.7910214"^^xsd:float; geo:lon "6.9705751"^^xsd:float; osm:id "1123700880"^^xsd:int.
+osm:tag osm:id "1123700880"^^xsd:int; osm:key "direction"; osm:val "forward".
+osm:tag osm:id "1123700880"^^xsd:int; osm:key "highway"; osm:val "give_way".
+osm:node rdf:type osm:node; geo:lat "45.7913464"^^xsd:float; geo:lon "6.9702664"^^xsd:float; osm:id "1123700885"^^xsd:int.
+osm:tag osm:id "1123700885"^^xsd:int; osm:key "bus"; osm:val "yes".
+osm:tag osm:id "1123700885"^^xsd:int; osm:key "bus_routes"; osm:val "Flixbus 405, 472, 507, N504; Arriva 581, 590".
+osm:tag osm:id "1123700885"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:tag osm:id "1123700885"^^xsd:int; osm:key "name"; osm:val "Piazzale Monte Bianco".
+osm:tag osm:id "1123700885"^^xsd:int; osm:key "public_transport"; osm:val "stop_position".
+osm:node rdf:type osm:node; geo:lat "45.7888794"^^xsd:float; geo:lon "6.9652361"^^xsd:float; osm:id "1128704162"^^xsd:int.
+osm:tag osm:id "1128704162"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:node rdf:type osm:node; geo:lat "45.8037786"^^xsd:float; geo:lon "6.9349523"^^xsd:float; osm:id "1128704399"^^xsd:int.
+osm:tag osm:id "1128704399"^^xsd:int; osm:key "name"; osm:val "Peindein".
+osm:tag osm:id "1128704399"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7888416"^^xsd:float; geo:lon "6.9653263"^^xsd:float; osm:id "1128704400"^^xsd:int.
+osm:tag osm:id "1128704400"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:node rdf:type osm:node; geo:lat "45.7922954"^^xsd:float; geo:lon "6.9639752"^^xsd:float; osm:id "1128704605"^^xsd:int.
+osm:tag osm:id "1128704605"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:tag osm:id "1128704605"^^xsd:int; osm:key "name"; osm:val "Dolonne".
+osm:tag osm:id "1128704605"^^xsd:int; osm:key "shelter"; osm:val "no".
+osm:node rdf:type osm:node; geo:lat "45.7959007"^^xsd:float; geo:lon "6.9667392"^^xsd:float; osm:id "1128704687"^^xsd:int.
+osm:tag osm:id "1128704687"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:node rdf:type osm:node; geo:lat "45.7949240"^^xsd:float; geo:lon "6.9663234"^^xsd:float; osm:id "1128704931"^^xsd:int.
+osm:tag osm:id "1128704931"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:node rdf:type osm:node; geo:lat "45.7939948"^^xsd:float; geo:lon "6.9724918"^^xsd:float; osm:id "1475234544"^^xsd:int.
+osm:tag osm:id "1475234544"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1475234544"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7906354"^^xsd:float; geo:lon "6.9453679"^^xsd:float; osm:id "1499953915"^^xsd:int.
+osm:tag osm:id "1499953915"^^xsd:int; osm:key "name"; osm:val "Plan Checrouit".
+osm:tag osm:id "1499953915"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7992735"^^xsd:float; geo:lon "6.9639975"^^xsd:float; osm:id "1587154486"^^xsd:int.
+osm:tag osm:id "1587154486"^^xsd:int; osm:key "sport"; osm:val "climbing".
+osm:node rdf:type osm:node; geo:lat "45.8019062"^^xsd:float; geo:lon "6.9615980"^^xsd:float; osm:id "1587154826"^^xsd:int.
+osm:tag osm:id "1587154826"^^xsd:int; osm:key "tourism"; osm:val "viewpoint".
+osm:node rdf:type osm:node; geo:lat "45.8012183"^^xsd:float; geo:lon "6.9847798"^^xsd:float; osm:id "1610816808"^^xsd:int.
+osm:tag osm:id "1610816808"^^xsd:int; osm:key "name"; osm:val "Raffort".
+osm:tag osm:id "1610816808"^^xsd:int; osm:key "place"; osm:val "locality".
+osm:node rdf:type osm:node; geo:lat "45.7994386"^^xsd:float; geo:lon "6.9789384"^^xsd:float; osm:id "1610816848"^^xsd:int.
+osm:tag osm:id "1610816848"^^xsd:int; osm:key "alt_name"; osm:val "Villair Dessus".
+osm:tag osm:id "1610816848"^^xsd:int; osm:key "alt_name_1"; osm:val "Villair Superiore".
+osm:tag osm:id "1610816848"^^xsd:int; osm:key "name"; osm:val "Villair Damon".
+osm:tag osm:id "1610816848"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7972665"^^xsd:float; geo:lon "6.9762969"^^xsd:float; osm:id "1610816853"^^xsd:int.
+osm:tag osm:id "1610816853"^^xsd:int; osm:key "alt_name"; osm:val "Villair Dessous".
+osm:tag osm:id "1610816853"^^xsd:int; osm:key "alt_name_1"; osm:val "Villair Inferiore".
+osm:tag osm:id "1610816853"^^xsd:int; osm:key "name"; osm:val "Villair Desot".
+osm:tag osm:id "1610816853"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.8009848"^^xsd:float; geo:lon "6.9838080"^^xsd:float; osm:id "1610816875"^^xsd:int.
+osm:tag osm:id "1610816875"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1610816875"^^xsd:int; osm:key "capacity"; osm:val "12".
+osm:tag osm:id "1610816875"^^xsd:int; osm:key "ele"; osm:val "1375".
+osm:tag osm:id "1610816875"^^xsd:int; osm:key "fee"; osm:val "no".
+osm:tag osm:id "1610816875"^^xsd:int; osm:key "name"; osm:val "Parcheggio della Val Sapin".
+osm:tag osm:id "1610816875"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7960373"^^xsd:float; geo:lon "6.9826700"^^xsd:float; osm:id "1611919978"^^xsd:int.
+osm:tag osm:id "1611919978"^^xsd:int; osm:key "name"; osm:val "Ermitage".
+osm:tag osm:id "1611919978"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.8067339"^^xsd:float; geo:lon "6.9316933"^^xsd:float; osm:id "1613190582"^^xsd:int.
+osm:tag osm:id "1613190582"^^xsd:int; osm:key "name"; osm:val "Lassy Desot".
+osm:tag osm:id "1613190582"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7889801"^^xsd:float; geo:lon "6.9737051"^^xsd:float; osm:id "1702743003"^^xsd:int.
+osm:tag osm:id "1702743003"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.8011054"^^xsd:float; geo:lon "6.9699046"^^xsd:float; osm:id "1734581382"^^xsd:int.
+osm:tag osm:id "1734581382"^^xsd:int; osm:key "name"; osm:val "La Saxe".
+osm:tag osm:id "1734581382"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.8004140"^^xsd:float; geo:lon "6.9707052"^^xsd:float; osm:id "1955373777"^^xsd:int.
+osm:tag osm:id "1955373777"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1955373777"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.8036101"^^xsd:float; geo:lon "6.9666471"^^xsd:float; osm:id "1955374373"^^xsd:int.
+osm:tag osm:id "1955374373"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1955374373"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7899627"^^xsd:float; geo:lon "6.9652008"^^xsd:float; osm:id "1955551055"^^xsd:int.
+osm:tag osm:id "1955551055"^^xsd:int; osm:key "name"; osm:val "Dolonne".
+osm:tag osm:id "1955551055"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.8000785"^^xsd:float; geo:lon "6.9663528"^^xsd:float; osm:id "1955551056"^^xsd:int.
+osm:tag osm:id "1955551056"^^xsd:int; osm:key "name"; osm:val "Entrelevie".
+osm:tag osm:id "1955551056"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7988692"^^xsd:float; geo:lon "6.9703808"^^xsd:float; osm:id "1955551059"^^xsd:int.
+osm:tag osm:id "1955551059"^^xsd:int; osm:key "name"; osm:val "Larzey".
+osm:tag osm:id "1955551059"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7932910"^^xsd:float; geo:lon "6.9654366"^^xsd:float; osm:id "1955551073"^^xsd:int.
+osm:tag osm:id "1955551073"^^xsd:int; osm:key "name"; osm:val "Les Forges".
+osm:tag osm:id "1955551073"^^xsd:int; osm:key "place"; osm:val "hamlet".
+osm:node rdf:type osm:node; geo:lat "45.7902570"^^xsd:float; geo:lon "6.9702514"^^xsd:float; osm:id "1955551133"^^xsd:int.
+osm:tag osm:id "1955551133"^^xsd:int; osm:key "fee"; osm:val "yes".
+osm:tag osm:id "1955551133"^^xsd:int; osm:key "parking"; osm:val "underground".
+osm:node rdf:type osm:node; geo:lat "45.7902759"^^xsd:float; geo:lon "6.9709112"^^xsd:float; osm:id "1955551148"^^xsd:int.
+osm:tag osm:id "1955551148"^^xsd:int; osm:key "access"; osm:val "private".
+osm:tag osm:id "1955551148"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1955551148"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7903994"^^xsd:float; geo:lon "6.9707486"^^xsd:float; osm:id "1955551202"^^xsd:int.
+osm:tag osm:id "1955551202"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7905016"^^xsd:float; geo:lon "6.9709689"^^xsd:float; osm:id "1955551226"^^xsd:int.
+osm:tag osm:id "1955551226"^^xsd:int; osm:key "access"; osm:val "private".
+osm:tag osm:id "1955551226"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1955551226"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7929567"^^xsd:float; geo:lon "6.9704441"^^xsd:float; osm:id "1955551709"^^xsd:int.
+osm:tag osm:id "1955551709"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1955551709"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.8002963"^^xsd:float; geo:lon "6.9654423"^^xsd:float; osm:id "1955553731"^^xsd:int.
+osm:tag osm:id "1955553731"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1955553731"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7885055"^^xsd:float; geo:lon "6.9728352"^^xsd:float; osm:id "1956163480"^^xsd:int.
+osm:tag osm:id "1956163480"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163480"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7889068"^^xsd:float; geo:lon "6.9721043"^^xsd:float; osm:id "1956163559"^^xsd:int.
+osm:tag osm:id "1956163559"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163559"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7890417"^^xsd:float; geo:lon "6.9709550"^^xsd:float; osm:id "1956163586"^^xsd:int.
+osm:tag osm:id "1956163586"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163586"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7923091"^^xsd:float; geo:lon "6.9698267"^^xsd:float; osm:id "1956163912"^^xsd:int.
+osm:tag osm:id "1956163912"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163912"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7926467"^^xsd:float; geo:lon "6.9722989"^^xsd:float; osm:id "1956163929"^^xsd:int.
+osm:tag osm:id "1956163929"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163929"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7930069"^^xsd:float; geo:lon "6.9748486"^^xsd:float; osm:id "1956163936"^^xsd:int.
+osm:tag osm:id "1956163936"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163936"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7937175"^^xsd:float; geo:lon "6.9682000"^^xsd:float; osm:id "1956163960"^^xsd:int.
+osm:tag osm:id "1956163960"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956163960"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7896880"^^xsd:float; geo:lon "6.9633449"^^xsd:float; osm:id "1956524806"^^xsd:int.
+osm:tag osm:id "1956524806"^^xsd:int; osm:key "access"; osm:val "private".
+osm:tag osm:id "1956524806"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956524806"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7898504"^^xsd:float; geo:lon "6.9638122"^^xsd:float; osm:id "1956524861"^^xsd:int.
+osm:tag osm:id "1956524861"^^xsd:int; osm:key "access"; osm:val "private".
+osm:tag osm:id "1956524861"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956524861"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7907321"^^xsd:float; geo:lon "6.9655903"^^xsd:float; osm:id "1956525083"^^xsd:int.
+osm:tag osm:id "1956525083"^^xsd:int; osm:key "access"; osm:val "private".
+osm:tag osm:id "1956525083"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "1956525083"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7906195"^^xsd:float; geo:lon "6.9654923"^^xsd:float; osm:id "2198191353"^^xsd:int.
+osm:tag osm:id "2198191353"^^xsd:int; osm:key "addr:housenumber"; osm:val "1".
+osm:tag osm:id "2198191353"^^xsd:int; osm:key "addr:street"; osm:val "Via Grapillon".
+osm:node rdf:type osm:node; geo:lat "45.7907043"^^xsd:float; geo:lon "6.9706230"^^xsd:float; osm:id "2270518011"^^xsd:int.
+osm:tag osm:id "2270518011"^^xsd:int; osm:key "direction"; osm:val "forward".
+osm:tag osm:id "2270518011"^^xsd:int; osm:key "highway"; osm:val "give_way".
+osm:node rdf:type osm:node; geo:lat "45.7915250"^^xsd:float; geo:lon "6.9713686"^^xsd:float; osm:id "2369796187"^^xsd:int.
+osm:tag osm:id "2369796187"^^xsd:int; osm:key "addr:housenumber"; osm:val "1".
+osm:tag osm:id "2369796187"^^xsd:int; osm:key "addr:street"; osm:val "Via Croux".
+osm:tag osm:id "2369796187"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "2369796187"^^xsd:int; osm:key "cuisine"; osm:val "italian".
+osm:tag osm:id "2369796187"^^xsd:int; osm:key "name"; osm:val "Du Parc".
+osm:tag osm:id "2369796187"^^xsd:int; osm:key "phone"; osm:val "+39 0165 842590".
+osm:node rdf:type osm:node; geo:lat "45.7910494"^^xsd:float; geo:lon "6.9719467"^^xsd:float; osm:id "2369796190"^^xsd:int.
+osm:tag osm:id "2369796190"^^xsd:int; osm:key "addr:housenumber"; osm:val "41".
+osm:tag osm:id "2369796190"^^xsd:int; osm:key "addr:street"; osm:val "Via Circonvallazione".
+osm:tag osm:id "2369796190"^^xsd:int; osm:key "name"; osm:val "Fromagi Tipici".
+osm:tag osm:id "2369796190"^^xsd:int; osm:key "name:it"; osm:val "Fratelli Panizzi".
+osm:tag osm:id "2369796190"^^xsd:int; osm:key "shop"; osm:val "deli".
+osm:node rdf:type osm:node; geo:lat "45.7912547"^^xsd:float; geo:lon "6.9707808"^^xsd:float; osm:id "2369796193"^^xsd:int.
+osm:tag osm:id "2369796193"^^xsd:int; osm:key "hiking"; osm:val "yes".
+osm:tag osm:id "2369796193"^^xsd:int; osm:key "information"; osm:val "guidepost".
+osm:tag osm:id "2369796193"^^xsd:int; osm:key "tourism"; osm:val "information".
+osm:node rdf:type osm:node; geo:lat "45.7915090"^^xsd:float; geo:lon "6.9708971"^^xsd:float; osm:id "2369796195"^^xsd:int.
+osm:tag osm:id "2369796195"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7918886"^^xsd:float; geo:lon "6.9715648"^^xsd:float; osm:id "2369796206"^^xsd:int.
+osm:tag osm:id "2369796206"^^xsd:int; osm:key "crossing"; osm:val "zebra".
+osm:tag osm:id "2369796206"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7925327"^^xsd:float; geo:lon "6.9710339"^^xsd:float; osm:id "2369796208"^^xsd:int.
+osm:tag osm:id "2369796208"^^xsd:int; osm:key "internet_access"; osm:val "no".
+osm:tag osm:id "2369796208"^^xsd:int; osm:key "name"; osm:val "Venezia".
+osm:tag osm:id "2369796208"^^xsd:int; osm:key "tourism"; osm:val "hotel".
+osm:node rdf:type osm:node; geo:lat "45.7914703"^^xsd:float; geo:lon "6.9707140"^^xsd:float; osm:id "2422654083"^^xsd:int.
+osm:tag osm:id "2422654083"^^xsd:int; osm:key "amenity"; osm:val "post_office".
+osm:node rdf:type osm:node; geo:lat "45.7936290"^^xsd:float; geo:lon "6.9632459"^^xsd:float; osm:id "2470083905"^^xsd:int.
+osm:tag osm:id "2470083905"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "2470083905"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.8056607"^^xsd:float; geo:lon "6.9478133"^^xsd:float; osm:id "2470085057"^^xsd:int.
+osm:tag osm:id "2470085057"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "2470085057"^^xsd:int; osm:key "parking"; osm:val "surface".
+osm:node rdf:type osm:node; geo:lat "45.7978957"^^xsd:float; geo:lon "6.9704437"^^xsd:float; osm:id "2568737245"^^xsd:int.
+osm:tag osm:id "2568737245"^^xsd:int; osm:key "addr:housenumber"; osm:val "14".
+osm:tag osm:id "2568737245"^^xsd:int; osm:key "addr:street"; osm:val "strada Gran Ru".
+osm:node rdf:type osm:node; geo:lat "45.8016258"^^xsd:float; geo:lon "6.9686376"^^xsd:float; osm:id "2817453699"^^xsd:int.
+osm:tag osm:id "2817453699"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:node rdf:type osm:node; geo:lat "45.7914416"^^xsd:float; geo:lon "6.9480386"^^xsd:float; osm:id "2908327815"^^xsd:int.
+osm:tag osm:id "2908327815"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "2908327815"^^xsd:int; osm:key "aerialway:access"; osm:val "both".
+osm:tag osm:id "2908327815"^^xsd:int; osm:key "aerialway:summer:access"; osm:val "both".
+osm:tag osm:id "2908327815"^^xsd:int; osm:key "name"; osm:val "Courmayeur".
+osm:node rdf:type osm:node; geo:lat "45.7961252"^^xsd:float; geo:lon "6.9828025"^^xsd:float; osm:id "2917172572"^^xsd:int.
+osm:tag osm:id "2917172572"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "2917172572"^^xsd:int; osm:key "name"; osm:val "Baita Ermitage".
+osm:node rdf:type osm:node; geo:lat "45.7906940"^^xsd:float; geo:lon "6.9704120"^^xsd:float; osm:id "2929830293"^^xsd:int.
+osm:tag osm:id "2929830293"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7910626"^^xsd:float; geo:lon "6.9704997"^^xsd:float; osm:id "2929830300"^^xsd:int.
+osm:tag osm:id "2929830300"^^xsd:int; osm:key "crossing"; osm:val "zebra".
+osm:tag osm:id "2929830300"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7912198"^^xsd:float; geo:lon "6.9706926"^^xsd:float; osm:id "2929846003"^^xsd:int.
+osm:tag osm:id "2929846003"^^xsd:int; osm:key "crossing"; osm:val "zebra".
+osm:tag osm:id "2929846003"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7913006"^^xsd:float; geo:lon "6.9707998"^^xsd:float; osm:id "2929846010"^^xsd:int.
+osm:tag osm:id "2929846010"^^xsd:int; osm:key "information"; osm:val "board".
+osm:tag osm:id "2929846010"^^xsd:int; osm:key "tourism"; osm:val "information".
+osm:node rdf:type osm:node; geo:lat "45.7914088"^^xsd:float; geo:lon "6.9707932"^^xsd:float; osm:id "2929846018"^^xsd:int.
+osm:tag osm:id "2929846018"^^xsd:int; osm:key "amenity"; osm:val "toilets".
+osm:node rdf:type osm:node; geo:lat "45.7915752"^^xsd:float; geo:lon "6.9699768"^^xsd:float; osm:id "3110756774"^^xsd:int.
+osm:tag osm:id "3110756774"^^xsd:int; osm:key "amenity"; osm:val "cinema".
+osm:node rdf:type osm:node; geo:lat "45.7925201"^^xsd:float; geo:lon "6.9833412"^^xsd:float; osm:id "3147120530"^^xsd:int.
+osm:tag osm:id "3147120530"^^xsd:int; osm:key "information"; osm:val "guidepost".
+osm:node rdf:type osm:node; geo:lat "45.7959900"^^xsd:float; geo:lon "6.9824131"^^xsd:float; osm:id "3147120560"^^xsd:int.
+osm:tag osm:id "3147120560"^^xsd:int; osm:key "information"; osm:val "guidepost".
+osm:node rdf:type osm:node; geo:lat "45.7999354"^^xsd:float; geo:lon "6.9500212"^^xsd:float; osm:id "3227787313"^^xsd:int.
+osm:tag osm:id "3227787313"^^xsd:int; osm:key "historic"; osm:val "memorial".
+osm:tag osm:id "3227787313"^^xsd:int; osm:key "memorial"; osm:val "statue".
+osm:tag osm:id "3227787313"^^xsd:int; osm:key "name"; osm:val "Statua Madonna".
+osm:node rdf:type osm:node; geo:lat "45.7904625"^^xsd:float; geo:lon "6.9735343"^^xsd:float; osm:id "3301034656"^^xsd:int.
+osm:tag osm:id "3301034656"^^xsd:int; osm:key "amenity"; osm:val "cafe".
+osm:tag osm:id "3301034656"^^xsd:int; osm:key "name"; osm:val "Caffè della Posta".
+osm:node rdf:type osm:node; geo:lat "45.7939747"^^xsd:float; geo:lon "6.9326830"^^xsd:float; osm:id "3307696399"^^xsd:int.
+osm:tag osm:id "3307696399"^^xsd:int; osm:key "aerialway"; osm:val "station".
+osm:tag osm:id "3307696399"^^xsd:int; osm:key "aerialway:access"; osm:val "exit".
+osm:tag osm:id "3307696399"^^xsd:int; osm:key "ele:local"; osm:val "2035".
+osm:tag osm:id "3307696399"^^xsd:int; osm:key "name"; osm:val "Pra Neyron".
+osm:node rdf:type osm:node; geo:lat "45.7903223"^^xsd:float; geo:lon "6.9702853"^^xsd:float; osm:id "3345988071"^^xsd:int.
+osm:tag osm:id "3345988071"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "3345988071"^^xsd:int; osm:key "fee"; osm:val "yes".
+osm:tag osm:id "3345988071"^^xsd:int; osm:key "layer"; osm:val "-1".
+osm:tag osm:id "3345988071"^^xsd:int; osm:key "parking"; osm:val "underground".
+osm:tag osm:id "3345988071"^^xsd:int; osm:key "ref"; osm:val "P2".
+osm:node rdf:type osm:node; geo:lat "45.7881259"^^xsd:float; geo:lon "6.9645432"^^xsd:float; osm:id "3509758693"^^xsd:int.
+osm:tag osm:id "3509758693"^^xsd:int; osm:key "addr:housenumber"; osm:val "6".
+osm:tag osm:id "3509758693"^^xsd:int; osm:key "addr:street"; osm:val "strada della vittoria".
+osm:node rdf:type osm:node; geo:lat "45.7932725"^^xsd:float; geo:lon "6.9713826"^^xsd:float; osm:id "3696614156"^^xsd:int.
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "access"; osm:val "customers".
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "amenity"; osm:val "parking".
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "fee"; osm:val "yes".
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "parking"; osm:val "underground".
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "park_ride"; osm:val "no".
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "supervised"; osm:val "yes".
+osm:tag osm:id "3696614156"^^xsd:int; osm:key "surface"; osm:val "asphalt".
+osm:node rdf:type osm:node; geo:lat "45.7897623"^^xsd:float; geo:lon "6.9719179"^^xsd:float; osm:id "3696625689"^^xsd:int.
+osm:tag osm:id "3696625689"^^xsd:int; osm:key "amenity"; osm:val "bench".
+osm:node rdf:type osm:node; geo:lat "45.7881394"^^xsd:float; geo:lon "6.9736366"^^xsd:float; osm:id "3696626158"^^xsd:int.
+osm:tag osm:id "3696626158"^^xsd:int; osm:key "addr:city"; osm:val "Courmayeur".
+osm:tag osm:id "3696626158"^^xsd:int; osm:key "internet_access"; osm:val "wlan".
+osm:tag osm:id "3696626158"^^xsd:int; osm:key "name"; osm:val "Hotel Cristallo".
+osm:tag osm:id "3696626158"^^xsd:int; osm:key "tourism"; osm:val "hotel".
+osm:node rdf:type osm:node; geo:lat "45.7909718"^^xsd:float; geo:lon "6.9722733"^^xsd:float; osm:id "3696631038"^^xsd:int.
+osm:tag osm:id "3696631038"^^xsd:int; osm:key "name"; osm:val "Carrefour Express".
+osm:tag osm:id "3696631038"^^xsd:int; osm:key "shop"; osm:val "supermarket".
+osm:node rdf:type osm:node; geo:lat "45.7918115"^^xsd:float; geo:lon "6.9725857"^^xsd:float; osm:id "3696653187"^^xsd:int.
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "addr:city"; osm:val "Courmayeur".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "addr:housenumber"; osm:val "2".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "addr:postcode"; osm:val "11013".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "addr:street"; osm:val "Strada del Villair".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "email"; osm:val "info@guidecourmayeur.com".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "name"; osm:val "Museo Alpino Duca degli Abruzzi".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "opening_hours"; osm:val "May, Jun, Sep, Oct, Nov: Tu-Su 08:30-12:30,16:00-18:30; Mo off; Jul 1-Aug 31: Mo-Su 08:30-12:30,16:00-19:00; Dec 1-Apr 30: Mo 16:00-19:00; Tu-Su 08:30-13:00,16:00-19:00".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "phone"; osm:val "+39 0165 842064".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "tourism"; osm:val "museum".
+osm:tag osm:id "3696653187"^^xsd:int; osm:key "website"; osm:val "www.guidecourmayeur.com".
+osm:node rdf:type osm:node; geo:lat "45.7908851"^^xsd:float; geo:lon "6.9714695"^^xsd:float; osm:id "3696655630"^^xsd:int.
+osm:tag osm:id "3696655630"^^xsd:int; osm:key "addr:city"; osm:val "Courmayeur".
+osm:tag osm:id "3696655630"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "3696655630"^^xsd:int; osm:key "name"; osm:val "Ristorante La Padella".
+osm:node rdf:type osm:node; geo:lat "45.8070129"^^xsd:float; geo:lon "6.9782048"^^xsd:float; osm:id "3780247996"^^xsd:int.
+osm:tag osm:id "3780247996"^^xsd:int; osm:key "tourism"; osm:val "viewpoint".
+osm:node rdf:type osm:node; geo:lat "45.7931341"^^xsd:float; geo:lon "6.9670430"^^xsd:float; osm:id "4014494192"^^xsd:int.
+osm:tag osm:id "4014494192"^^xsd:int; osm:key "amenity"; osm:val "nightclub".
+osm:tag osm:id "4014494192"^^xsd:int; osm:key "name"; osm:val "Club Haus 80's Courmayeur".
+osm:node rdf:type osm:node; geo:lat "45.7914068"^^xsd:float; geo:lon "6.9690922"^^xsd:float; osm:id "4263282585"^^xsd:int.
+osm:tag osm:id "4263282585"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.7914232"^^xsd:float; geo:lon "6.9706002"^^xsd:float; osm:id "4284917490"^^xsd:int.
+osm:tag osm:id "4284917490"^^xsd:int; osm:key "name"; osm:val "Ufficio del Turismo".
+osm:tag osm:id "4284917490"^^xsd:int; osm:key "tourism"; osm:val "information".
+osm:node rdf:type osm:node; geo:lat "45.7909755"^^xsd:float; geo:lon "6.9701141"^^xsd:float; osm:id "4284919791"^^xsd:int.
+osm:tag osm:id "4284919791"^^xsd:int; osm:key "amenity"; osm:val "bench".
+osm:node rdf:type osm:node; geo:lat "45.7913002"^^xsd:float; geo:lon "6.9707523"^^xsd:float; osm:id "4284970289"^^xsd:int.
+osm:tag osm:id "4284970289"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.7909633"^^xsd:float; geo:lon "6.9701597"^^xsd:float; osm:id "4284970389"^^xsd:int.
+osm:tag osm:id "4284970389"^^xsd:int; osm:key "amenity"; osm:val "bench".
+osm:node rdf:type osm:node; geo:lat "45.7930643"^^xsd:float; geo:lon "6.9711600"^^xsd:float; osm:id "4291104992"^^xsd:int.
+osm:tag osm:id "4291104992"^^xsd:int; osm:key "amenity"; osm:val "library".
+osm:node rdf:type osm:node; geo:lat "45.7953937"^^xsd:float; geo:lon "6.9730739"^^xsd:float; osm:id "4291104993"^^xsd:int.
+osm:tag osm:id "4291104993"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.7975945"^^xsd:float; geo:lon "6.9759477"^^xsd:float; osm:id "4291105195"^^xsd:int.
+osm:tag osm:id "4291105195"^^xsd:int; osm:key "amenity"; osm:val "post_box".
+osm:node rdf:type osm:node; geo:lat "45.7992600"^^xsd:float; geo:lon "6.9783520"^^xsd:float; osm:id "4291106693"^^xsd:int.
+osm:tag osm:id "4291106693"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.7957326"^^xsd:float; geo:lon "6.9746845"^^xsd:float; osm:id "4294056394"^^xsd:int.
+osm:tag osm:id "4294056394"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:node rdf:type osm:node; geo:lat "45.7907538"^^xsd:float; geo:lon "6.9709831"^^xsd:float; osm:id "4697919048"^^xsd:int.
+osm:tag osm:id "4697919048"^^xsd:int; osm:key "direction"; osm:val "forward".
+osm:tag osm:id "4697919048"^^xsd:int; osm:key "highway"; osm:val "give_way".
+osm:node rdf:type osm:node; geo:lat "45.7909076"^^xsd:float; geo:lon "6.9704687"^^xsd:float; osm:id "4697919052"^^xsd:int.
+osm:tag osm:id "4697919052"^^xsd:int; osm:key "direction"; osm:val "forward".
+osm:tag osm:id "4697919052"^^xsd:int; osm:key "highway"; osm:val "give_way".
+osm:node rdf:type osm:node; geo:lat "45.7905686"^^xsd:float; geo:lon "6.9708504"^^xsd:float; osm:id "4697919053"^^xsd:int.
+osm:tag osm:id "4697919053"^^xsd:int; osm:key "direction"; osm:val "forward".
+osm:tag osm:id "4697919053"^^xsd:int; osm:key "highway"; osm:val "give_way".
+osm:node rdf:type osm:node; geo:lat "45.7912910"^^xsd:float; geo:lon "6.9710574"^^xsd:float; osm:id "4697919061"^^xsd:int.
+osm:tag osm:id "4697919061"^^xsd:int; osm:key "highway"; osm:val "stop".
+osm:node rdf:type osm:node; geo:lat "45.7891832"^^xsd:float; geo:lon "6.9644210"^^xsd:float; osm:id "4739990603"^^xsd:int.
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "addr:city"; osm:val "Courmayeur".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "addr:housenumber"; osm:val "16".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "addr:postcode"; osm:val "11013".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "addr:street"; osm:val "Passaggio la Sorgente".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "description"; osm:val "Appartamenti per brevi soggiorni.".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "email"; osm:val "lonampio@gmail.com".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "internet_access"; osm:val "yes".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "internet_access:fee"; osm:val "no".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "name"; osm:val "Lo Nampio".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "rooms"; osm:val "4".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "smoking"; osm:val "no".
+osm:tag osm:id "4739990603"^^xsd:int; osm:key "website"; osm:val "https://lonampio.com/".
+osm:node rdf:type osm:node; geo:lat "45.8081910"^^xsd:float; geo:lon "6.9341556"^^xsd:float; osm:id "4898459305"^^xsd:int.
+osm:tag osm:id "4898459305"^^xsd:int; osm:key "natural"; osm:val "stone".
+osm:node rdf:type osm:node; geo:lat "45.7891700"^^xsd:float; geo:lon "6.9644281"^^xsd:float; osm:id "4937462921"^^xsd:int.
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "addr:housenumber"; osm:val "16".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "addr:postcode"; osm:val "11013".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "addr:street"; osm:val "Passaggio la Sorgente".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "email"; osm:val "info@lonampio.com".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "internet_access"; osm:val "wlan".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "name"; osm:val "Lo Nampio".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "name:en"; osm:val "Français".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "name:it"; osm:val "Lo Nampio".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "opening_hours"; osm:val "24/7".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "operator"; osm:val "Nelly".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "phone"; osm:val "+393491442516".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "tourism"; osm:val "chalet".
+osm:tag osm:id "4937462921"^^xsd:int; osm:key "website"; osm:val "https://lonampio.com/".
+osm:node rdf:type osm:node; geo:lat "45.7924811"^^xsd:float; geo:lon "6.9721073"^^xsd:float; osm:id "4937738521"^^xsd:int.
+osm:tag osm:id "4937738521"^^xsd:int; osm:key "amenity"; osm:val "atm".
+osm:tag osm:id "4937738521"^^xsd:int; osm:key "opening_hours"; osm:val "24/7".
+osm:tag osm:id "4937738521"^^xsd:int; osm:key "operator"; osm:val "BCC".
+osm:node rdf:type osm:node; geo:lat "45.7919990"^^xsd:float; geo:lon "6.9650985"^^xsd:float; osm:id "4938207623"^^xsd:int.
+osm:tag osm:id "4938207623"^^xsd:int; osm:key "amenity"; osm:val "waste_basket".
+osm:node rdf:type osm:node; geo:lat "45.7885041"^^xsd:float; geo:lon "6.9649034"^^xsd:float; osm:id "4938212423"^^xsd:int.
+osm:tag osm:id "4938212423"^^xsd:int; osm:key "amenity"; osm:val "recycling".
+osm:node rdf:type osm:node; geo:lat "45.7939784"^^xsd:float; geo:lon "6.9663485"^^xsd:float; osm:id "4938212424"^^xsd:int.
+osm:tag osm:id "4938212424"^^xsd:int; osm:key "amenity"; osm:val "waste_basket".
+osm:node rdf:type osm:node; geo:lat "45.7931806"^^xsd:float; geo:lon "6.9713342"^^xsd:float; osm:id "4948218321"^^xsd:int.
+osm:tag osm:id "4948218321"^^xsd:int; osm:key "highway"; osm:val "bus_stop".
+osm:node rdf:type osm:node; geo:lat "45.7911958"^^xsd:float; geo:lon "6.9707951"^^xsd:float; osm:id "4997952045"^^xsd:int.
+osm:tag osm:id "4997952045"^^xsd:int; osm:key "crossing"; osm:val "zebra".
+osm:tag osm:id "4997952045"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7908591"^^xsd:float; geo:lon "6.9711364"^^xsd:float; osm:id "4997952050"^^xsd:int.
+osm:tag osm:id "4997952050"^^xsd:int; osm:key "crossing"; osm:val "zebra".
+osm:tag osm:id "4997952050"^^xsd:int; osm:key "highway"; osm:val "crossing".
+osm:node rdf:type osm:node; geo:lat "45.7906497"^^xsd:float; geo:lon "6.9702444"^^xsd:float; osm:id "4997952106"^^xsd:int.
+osm:tag osm:id "4997952106"^^xsd:int; osm:key "highway"; osm:val "give_way".
+osm:node rdf:type osm:node; geo:lat "45.7910712"^^xsd:float; geo:lon "6.9704772"^^xsd:float; osm:id "4997952107"^^xsd:int.
+osm:tag osm:id "4997952107"^^xsd:int; osm:key "highway"; osm:val "stop".
+osm:node rdf:type osm:node; geo:lat "45.7921864"^^xsd:float; geo:lon "6.9717260"^^xsd:float; osm:id "5200624321"^^xsd:int.
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "cuisine"; osm:val "italian".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "delivery"; osm:val "no".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "name"; osm:val "La Terraza".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "opening_hours"; osm:val "Mo-Su 12:00-14:30, 19:00-22:30".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "outdoor_seating"; osm:val "yes".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "smoking"; osm:val "outside".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "takeaway"; osm:val "no".
+osm:tag osm:id "5200624321"^^xsd:int; osm:key "website"; osm:val "http://www.ristorantelaterrazza.com/courmayeur/sito-it-8.html".
+osm:node rdf:type osm:node; geo:lat "45.7940421"^^xsd:float; geo:lon "6.9702060"^^xsd:float; osm:id "5459687822"^^xsd:int.
+osm:tag osm:id "5459687822"^^xsd:int; osm:key "name"; osm:val "Enoteca Goio".
+osm:tag osm:id "5459687822"^^xsd:int; osm:key "shop"; osm:val "alcohol".
+osm:node rdf:type osm:node; geo:lat "45.7907023"^^xsd:float; geo:lon "6.9735139"^^xsd:float; osm:id "5495592922"^^xsd:int.
+osm:tag osm:id "5495592922"^^xsd:int; osm:key "amenity"; osm:val "bar".
+osm:tag osm:id "5495592922"^^xsd:int; osm:key "name"; osm:val "Le Prive".
+osm:node rdf:type osm:node; geo:lat "45.7903558"^^xsd:float; geo:lon "6.9710683"^^xsd:float; osm:id "5495602922"^^xsd:int.
+osm:tag osm:id "5495602922"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "5495602922"^^xsd:int; osm:key "name"; osm:val "Le Vieux Pommieres".
+osm:tag osm:id "5495602922"^^xsd:int; osm:key "website"; osm:val "http://levieuxpommier.it/courmayeur/sito-it-8.html".
+osm:node rdf:type osm:node; geo:lat "45.7889764"^^xsd:float; geo:lon "6.9534125"^^xsd:float; osm:id "5614911949"^^xsd:int.
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "denotation"; osm:val "natural_monument".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "leaf_cycle"; osm:val "evergreen".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "leaf_type"; osm:val "needleleaved".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "name"; osm:val "Picea abies".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "name:de"; osm:val "Gemeine Fichte".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "name:en"; osm:val "Norway spruce".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "name:es"; osm:val "Picea de Noruega".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "name:fr"; osm:val "Épicéa commun".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "name:it"; osm:val "Abete rosso".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "natural"; osm:val "tree".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "source"; osm:val "mipaaf D.M. N.5450 del 19/12/2017".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "species"; osm:val "Picea abies".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "species:de"; osm:val "Gemeine Fichte".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "species:en"; osm:val "Norway Spruce".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "species:es"; osm:val "Pícea de Noruega".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "species:fr"; osm:val "Epicea commun".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "species:it"; osm:val "Abete rosso".
+osm:tag osm:id "5614911949"^^xsd:int; osm:key "wikidata"; osm:val "Q55743226".
+osm:node rdf:type osm:node; geo:lat "45.8042797"^^xsd:float; geo:lon "6.9660939"^^xsd:float; osm:id "5853560235"^^xsd:int.
+osm:tag osm:id "5853560235"^^xsd:int; osm:key "emergency"; osm:val "fire_hydrant".
+osm:tag osm:id "5853560235"^^xsd:int; osm:key "fire_hydrant:type"; osm:val "pillar".
+osm:node rdf:type osm:node; geo:lat "45.8052482"^^xsd:float; geo:lon "6.9652302"^^xsd:float; osm:id "5853560236"^^xsd:int.
+osm:tag osm:id "5853560236"^^xsd:int; osm:key "emergency"; osm:val "fire_hydrant".
+osm:tag osm:id "5853560236"^^xsd:int; osm:key "fire_hydrant:type"; osm:val "pillar".
+osm:node rdf:type osm:node; geo:lat "45.8031167"^^xsd:float; geo:lon "6.9672258"^^xsd:float; osm:id "5853560237"^^xsd:int.
+osm:tag osm:id "5853560237"^^xsd:int; osm:key "amenity"; osm:val "bench".
+osm:tag osm:id "5853560237"^^xsd:int; osm:key "backrest"; osm:val "yes".
+osm:node rdf:type osm:node; geo:lat "45.8054240"^^xsd:float; geo:lon "6.9651229"^^xsd:float; osm:id "5853560238"^^xsd:int.
+osm:tag osm:id "5853560238"^^xsd:int; osm:key "amenity"; osm:val "bench".
+osm:tag osm:id "5853560238"^^xsd:int; osm:key "backrest"; osm:val "yes".
+osm:node rdf:type osm:node; geo:lat "45.7926606"^^xsd:float; geo:lon "6.9762911"^^xsd:float; osm:id "6565094732"^^xsd:int.
+osm:tag osm:id "6565094732"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "6565094732"^^xsd:int; osm:key "contact:phone"; osm:val "+39 0165 841 988".
+osm:tag osm:id "6565094732"^^xsd:int; osm:key "name"; osm:val "Ristorante Chalet Plan Gorret".
+osm:node rdf:type osm:node; geo:lat "45.7925503"^^xsd:float; geo:lon "6.9762743"^^xsd:float; osm:id "6565094733"^^xsd:int.
+osm:tag osm:id "6565094733"^^xsd:int; osm:key "name"; osm:val "Chalet Plan Gorret".
+osm:tag osm:id "6565094733"^^xsd:int; osm:key "tourism"; osm:val "hotel".
+osm:node rdf:type osm:node; geo:lat "45.7919332"^^xsd:float; geo:lon "6.9724620"^^xsd:float; osm:id "6691415140"^^xsd:int.
+osm:tag osm:id "6691415140"^^xsd:int; osm:key "amenity"; osm:val "post_box".
+osm:tag osm:id "6691415140"^^xsd:int; osm:key "name"; osm:val "Post box".
+osm:node rdf:type osm:node; geo:lat "45.7973199"^^xsd:float; geo:lon "6.9690334"^^xsd:float; osm:id "6702953584"^^xsd:int.
+osm:tag osm:id "6702953584"^^xsd:int; osm:key "access"; osm:val "yes".
+osm:tag osm:id "6702953584"^^xsd:int; osm:key "amenity"; osm:val "drinking_water".
+osm:tag osm:id "6702953584"^^xsd:int; osm:key "wheelchair"; osm:val "yes".
+osm:node rdf:type osm:node; geo:lat "45.7973705"^^xsd:float; geo:lon "6.9684399"^^xsd:float; osm:id "6721200785"^^xsd:int.
+osm:tag osm:id "6721200785"^^xsd:int; osm:key "addr:housenumber"; osm:val "32".
+osm:tag osm:id "6721200785"^^xsd:int; osm:key "addr:street"; osm:val "Via dei Bagni".
+osm:tag osm:id "6721200785"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "6721200785"^^xsd:int; osm:key "name"; osm:val "Al Cumin. Ristorante".
+osm:tag osm:id "6721200785"^^xsd:int; osm:key "opening_hours"; osm:val "Su 12:30-14:30, 19:30-23:00; Tu-Sa 07:30-23:00".
+osm:node rdf:type osm:node; geo:lat "45.7942497"^^xsd:float; geo:lon "6.9320656"^^xsd:float; osm:id "6770181253"^^xsd:int.
+osm:tag osm:id "6770181253"^^xsd:int; osm:key "tourism"; osm:val "viewpoint".
+osm:node rdf:type osm:node; geo:lat "45.7892512"^^xsd:float; geo:lon "6.9643823"^^xsd:float; osm:id "6836976448"^^xsd:int.
+osm:tag osm:id "6836976448"^^xsd:int; osm:key "emergency"; osm:val "fire_alarm_box".
+osm:tag osm:id "6836976448"^^xsd:int; osm:key "indoor"; osm:val "no".
+osm:node rdf:type osm:node; geo:lat "45.7918407"^^xsd:float; geo:lon "6.9725065"^^xsd:float; osm:id "7151637094"^^xsd:int.
+osm:tag osm:id "7151637094"^^xsd:int; osm:key "addr:street"; osm:val "Via Roma".
+osm:tag osm:id "7151637094"^^xsd:int; osm:key "amenity"; osm:val "bar".
+osm:tag osm:id "7151637094"^^xsd:int; osm:key "brewery"; osm:val "yes".
+osm:tag osm:id "7151637094"^^xsd:int; osm:key "min_age"; osm:val "18".
+osm:tag osm:id "7151637094"^^xsd:int; osm:key "name"; osm:val "Bar delle Guide".
+osm:node rdf:type osm:node; geo:lat "45.7922941"^^xsd:float; geo:lon "6.9718991"^^xsd:float; osm:id "7151637103"^^xsd:int.
+osm:tag osm:id "7151637103"^^xsd:int; osm:key "amenity"; osm:val "cafe".
+osm:tag osm:id "7151637103"^^xsd:int; osm:key "internet_access"; osm:val "yes".
+osm:tag osm:id "7151637103"^^xsd:int; osm:key "name"; osm:val "Caffetteria cremes et chocolat".
+osm:node rdf:type osm:node; geo:lat "45.7921586"^^xsd:float; geo:lon "6.9722713"^^xsd:float; osm:id "7151637104"^^xsd:int.
+osm:tag osm:id "7151637104"^^xsd:int; osm:key "amenity"; osm:val "bar".
+osm:tag osm:id "7151637104"^^xsd:int; osm:key "name"; osm:val "zillos".
+osm:node rdf:type osm:node; geo:lat "45.7922935"^^xsd:float; geo:lon "6.9724142"^^xsd:float; osm:id "7184827568"^^xsd:int.
+osm:tag osm:id "7184827568"^^xsd:int; osm:key "amenity"; osm:val "bar".
+osm:tag osm:id "7184827568"^^xsd:int; osm:key "name"; osm:val "Bar centro".
+osm:node rdf:type osm:node; geo:lat "45.7917838"^^xsd:float; geo:lon "6.9724099"^^xsd:float; osm:id "7184827570"^^xsd:int.
+osm:tag osm:id "7184827570"^^xsd:int; osm:key "name"; osm:val "Ardi Sport".
+osm:tag osm:id "7184827570"^^xsd:int; osm:key "shop"; osm:val "supermarket".
+osm:node rdf:type osm:node; geo:lat "45.7920438"^^xsd:float; geo:lon "6.9713374"^^xsd:float; osm:id "7184827576"^^xsd:int.
+osm:tag osm:id "7184827576"^^xsd:int; osm:key "amenity"; osm:val "fast_food".
+osm:tag osm:id "7184827576"^^xsd:int; osm:key "name"; osm:val "pizzeria".
+osm:node rdf:type osm:node; geo:lat "45.7912496"^^xsd:float; geo:lon "6.9715533"^^xsd:float; osm:id "7184827577"^^xsd:int.
+osm:tag osm:id "7184827577"^^xsd:int; osm:key "amenity"; osm:val "bank".
+osm:tag osm:id "7184827577"^^xsd:int; osm:key "name"; osm:val "Biverbanca".
+osm:node rdf:type osm:node; geo:lat "45.7934930"^^xsd:float; geo:lon "6.9713037"^^xsd:float; osm:id "7184827578"^^xsd:int.
+osm:tag osm:id "7184827578"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "7184827578"^^xsd:int; osm:key "name"; osm:val "Lo scoiattolo".
+osm:node rdf:type osm:node; geo:lat "45.7911743"^^xsd:float; geo:lon "6.9732126"^^xsd:float; osm:id "7184827580"^^xsd:int.
+osm:tag osm:id "7184827580"^^xsd:int; osm:key "amenity"; osm:val "bar".
+osm:tag osm:id "7184827580"^^xsd:int; osm:key "name"; osm:val "Dahu".
+osm:node rdf:type osm:node; geo:lat "45.7911320"^^xsd:float; geo:lon "6.9728821"^^xsd:float; osm:id "7184827581"^^xsd:int.
+osm:tag osm:id "7184827581"^^xsd:int; osm:key "amenity"; osm:val "restaurant".
+osm:tag osm:id "7184827581"^^xsd:int; osm:key "name"; osm:val "la piazzetta".
+osm:node rdf:type osm:node; geo:lat "45.8030294"^^xsd:float; geo:lon "6.9673107"^^xsd:float; osm:id "7842781584"^^xsd:int.
+osm:tag osm:id "7842781584"^^xsd:int; osm:key "name"; osm:val "Carrefour Express".
+osm:tag osm:id "7842781584"^^xsd:int; osm:key "opening_hours"; osm:val "Mo-Su 08:00-13:00; Mo-Su 15:30-19:30".
+osm:tag osm:id "7842781584"^^xsd:int; osm:key "shop"; osm:val "supermarket".

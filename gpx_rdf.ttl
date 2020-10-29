@@ -1,0 +1,119 @@
+prefix xsd: <http://w3.org/2001/XMLSchema#>.
+prefix rdf: <http://w3.org/1999/02/22-rdf-syntax-ns#>.
+prefix rdfs: <http://w3.org/2000/01/rdf-schema#>.
+prefix wikidata: <https://www.wikidata.org/wiki/>.
+prefix dbpedia: <http://dbpedia.org/ontology/>.
+prefix osm: <http://openstreetmap.org/export/>.
+prefix gpx: <http://topografix.com/GPX/1/1/>.
+
+
+gpx:trk gpx:name Refuge Maison Vieille - Refuge Bertone
+
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790956; gpx:lon 6.931023; gpx:id 0.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790777; gpx:lon 6.932203; gpx:id 1.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791196; gpx:lon 6.932783; gpx:id 2.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791495; gpx:lon 6.935014; gpx:id 3.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.793051; gpx:lon 6.936537; gpx:id 4.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792542; gpx:lon 6.937159; gpx:id 5.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792224; gpx:lon 6.937589; gpx:id 6.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.79179; gpx:lon 6.93776; gpx:id 7.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791824; gpx:lon 6.939306; gpx:id 8.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792104; gpx:lon 6.941322; gpx:id 9.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792254; gpx:lon 6.943382; gpx:id 10.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792119; gpx:lon 6.945099; gpx:id 11.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791525; gpx:lon 6.945743; gpx:id 12.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790907; gpx:lon 6.945313; gpx:id 13.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790717; gpx:lon 6.945786; gpx:id 14.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790309; gpx:lon 6.94512; gpx:id 15.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789729; gpx:lon 6.944927; gpx:id 16.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789206; gpx:lon 6.945442; gpx:id 17.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.78968; gpx:lon 6.945528; gpx:id 18.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790141; gpx:lon 6.945785; gpx:id 19.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790249; gpx:lon 6.946944; gpx:id 20.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790238; gpx:lon 6.948017; gpx:id 21.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790353; gpx:lon 6.948682; gpx:id 22.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790728; gpx:lon 6.949305; gpx:id 23.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790877; gpx:lon 6.950013; gpx:id 24.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790129; gpx:lon 6.949326; gpx:id 25.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790234; gpx:lon 6.950807; gpx:id 26.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790605; gpx:lon 6.951054; gpx:id 27.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790772; gpx:lon 6.951493; gpx:id 28.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790941; gpx:lon 6.952073; gpx:id 29.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791072; gpx:lon 6.952845; gpx:id 30.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790772; gpx:lon 6.953231; gpx:id 31.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790757; gpx:lon 6.954004; gpx:id 32.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790477; gpx:lon 6.955056; gpx:id 33.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790099; gpx:lon 6.954047; gpx:id 34.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789759; gpx:lon 6.953253; gpx:id 35.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789246; gpx:lon 6.952459; gpx:id 36.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788513; gpx:lon 6.951987; gpx:id 37.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788289; gpx:lon 6.952266; gpx:id 38.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788756; gpx:lon 6.95321; gpx:id 39.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788124; gpx:lon 6.953553; gpx:id 40.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788184; gpx:lon 6.954025; gpx:id 41.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788954; gpx:lon 6.954937; gpx:id 42.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788827; gpx:lon 6.955892; gpx:id 43.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788618; gpx:lon 6.956686; gpx:id 44.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788468; gpx:lon 6.957737; gpx:id 45.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788906; gpx:lon 6.958746; gpx:id 46.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788857; gpx:lon 6.960656; gpx:id 47.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789097; gpx:lon 6.9619; gpx:id 48.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789519; gpx:lon 6.962995; gpx:id 49.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789905; gpx:lon 6.963617; gpx:id 50.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790058; gpx:lon 6.964475; gpx:id 51.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.789381; gpx:lon 6.964754; gpx:id 52.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.788741; gpx:lon 6.965258; gpx:id 53.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790477; gpx:lon 6.96587; gpx:id 54.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791794; gpx:lon 6.965698; gpx:id 55.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792493; gpx:lon 6.966921; gpx:id 56.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792643; gpx:lon 6.967823; gpx:id 57.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792003; gpx:lon 6.968874; gpx:id 58.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791281; gpx:lon 6.969239; gpx:id 59.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791266; gpx:lon 6.970204; gpx:id 60.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790952; gpx:lon 6.971127; gpx:id 61.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.790742; gpx:lon 6.972286; gpx:id 62.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792164; gpx:lon 6.972329; gpx:id 63.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.791685; gpx:lon 6.972908; gpx:id 64.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792164; gpx:lon 6.973123; gpx:id 65.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.792957; gpx:lon 6.973423; gpx:id 66.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.793989; gpx:lon 6.97411; gpx:id 67.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.795085; gpx:lon 6.97441; gpx:id 68.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.795994; gpx:lon 6.975376; gpx:id 69.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.797415; gpx:lon 6.976019; gpx:id 70.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.799094; gpx:lon 6.978294; gpx:id 71.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.799932; gpx:lon 6.979517; gpx:id 72.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.80077; gpx:lon 6.980547; gpx:id 73.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.800979; gpx:lon 6.981405; gpx:id 74.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.801009; gpx:lon 6.982178; gpx:id 75.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.800501; gpx:lon 6.982779; gpx:id 76.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.800665; gpx:lon 6.984109; gpx:id 77.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.801219; gpx:lon 6.985225; gpx:id 78.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.801458; gpx:lon 6.985139; gpx:id 79.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.801323; gpx:lon 6.984538; gpx:id 80.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.801697; gpx:lon 6.984495; gpx:id 81.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.801772; gpx:lon 6.983766; gpx:id 82.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.802162; gpx:lon 6.982886; gpx:id 83.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.80255; gpx:lon 6.984624; gpx:id 84.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.803193; gpx:lon 6.984881; gpx:id 85.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.803059; gpx:lon 6.985933; gpx:id 86.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.803403; gpx:lon 6.985632; gpx:id 87.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.803702; gpx:lon 6.985976; gpx:id 88.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.803747; gpx:lon 6.985504; gpx:id 89.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.80421; gpx:lon 6.985826; gpx:id 90.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.80421; gpx:lon 6.985246; gpx:id 91.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.804539; gpx:lon 6.985311; gpx:id 92.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.804809; gpx:lon 6.983722; gpx:id 93.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.805707; gpx:lon 6.984838; gpx:id 94.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.806021; gpx:lon 6.983744; gpx:id 95.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.806754; gpx:lon 6.983422; gpx:id 96.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.806544; gpx:lon 6.982113; gpx:id 97.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807157; gpx:lon 6.982028; gpx:id 98.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807262; gpx:lon 6.981287; gpx:id 99.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807127; gpx:lon 6.979903; gpx:id 100.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.806963; gpx:lon 6.979217; gpx:id 101.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807128; gpx:lon 6.978599; gpx:id 102.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807367; gpx:lon 6.978272; gpx:id 103.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807419; gpx:lon 6.97747; gpx:id 104.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.807905; gpx:lon 6.977972; gpx:id 105.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.80807; gpx:lon 6.977307; gpx:id 106.
+gpx:trkpt rdf:type gpx:ptType; gpx:lat 45.808638; gpx:lon 6.9778; gpx:id 107.
