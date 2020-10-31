@@ -210,7 +210,7 @@ def make_rdf(gpxFile, rdfFile):
 
 
 
-def rdf_make(tagIds):
+def query_make():
     #
 
     # Sparql query but not working yet
@@ -233,37 +233,29 @@ def rdf_make(tagIds):
 
     # from SPARQLWrapper import SPARQLWrapper, JSON
 
-    sparql = SPARQLWrapper("<https://github.com/MuratTuz/rdf/blob/main/gpx_osm_rdf.ttl>")
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 
-    queryTourism = """
+    queryTourism = """ 
         PREFIX dbp: <http://dbpedia.org/resource/classes#>.
+        PREFIX file: <https://github.com/MuratTuz/rdf/blob/main#gpx_osm_rdf.ttl>.
+        PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT DISTINCT ?place
 
-        WHERE {?tags osm:key ?place.
+        WHERE {file:tags osm:key ?place.
         filter(?place=dbp:tourism)}"""
 
-    for id in tagIds:
-        # queryTrkPoint="""
-        # SELECT DISTINCT ?trkpt ?pt_lat ?pt_long ?nd_lat ?nd_lon ?name ?place
+    print('---------------------------')
+    print('id %s' % id)
+    sparql.setQuery(queryTourism)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
 
-        # WHERE {?trkpt rdf:type :trkType. ?trkpt :hassurroundings osm:nd%s; :haslat ?pt_lat; :haslon ?pt_lon.
-        # osm:nd%s osm:hasname ?name; osm:haslat ?nd_lat; osm:haslon ?nd_lon; osm:amenity ?place.}"""%(id,id)
+    print('---------------------------')
+    for result in results["results"]["bindings"]:
+        print(result["place"]["value"])
 
-        queryTrkPoint = """
-        select * where { ?osm osmt:place ?place. }"""
-
-        print('---------------------------')
-        print('id %s' % id)
-        sparql.setQuery(queryTrkPoint)
-        sparql.setReturnFormat(JSON)
-        results = sparql.query().convert()
-
-        print('---------------------------')
-        for result in results["results"]["bindings"]:
-            print(result["label"]["value"])
-
-        print('---------------------------')
+    print('---------------------------')
 
     # for tag in tagNames:
     #     print('---------------------------')
@@ -281,6 +273,29 @@ def rdf_make(tagIds):
     #         print(result["label"]["value"])
 
     #     print('---------------------------')
+
+def createAllFiles(gpxFiles):
+    #
+    # This function creates all html files
+    #
+    for gpx_file in gpxFiles:
+        list_trackpoints = gpx_reader(gpx_file)
+
+        # calculate part of map to be shown
+        latitude_max = max(point.latitude for point in list_trackpoints)
+        latitude_min = min(point.latitude for point in list_trackpoints)
+        longitude_max = max(point.longitude for point in list_trackpoints)
+        longitude_min = min(point.longitude for point in list_trackpoints)
+        variance = (longitude_min, latitude_min, longitude_max, latitude_max)
+
+        make_rdf(gpx_file, rdfFileName)
+
+        # TODO: the venue description is filled by a default value inside get_osm_file()
+        # however, it should be filled with info from dbpedia retrieved via SPARQLWrapper?!
+        venues = get_osm_file(variance, gpxFileName, rdfFileName)
+        # query_make()
+
+        createHtmlFile(variance, gpxFileName.replace('.gpx', ''), list_trackpoints, venues)
 
 
 if __name__ == '__main__':
@@ -300,5 +315,6 @@ if __name__ == '__main__':
     # TODO: the venue description is filled by a default value inside get_osm_file()
     # however, it should be filled with info from dbpedia retrieved via SPARQLWrapper?!
     venues = get_osm_file(variance, gpxFileName, rdfFileName)
+    query_make()
 
-    #createHtmlFile(variance, gpxFileName.replace('.gpx', ''), list_trackpoints, venues)
+    createHtmlFile(variance, gpxFileName.replace('.gpx', ''), list_trackpoints, venues)

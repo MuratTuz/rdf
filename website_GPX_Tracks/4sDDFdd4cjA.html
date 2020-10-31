@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OpenStreetmap with RDF</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    </head>
+    <body>
+        <div id="mapid" style="width: 800px; height: 600px;"></div>
+        <script>
+            var mymap = L.map("mapid").setView([45.798381, 6.958500], 13);
+            var circle = L.circle([45.790956, 6.931023], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790777, 6.932203], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791196, 6.932783], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791495, 6.935014], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.793051, 6.936537], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792542, 6.937159], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792224, 6.937589], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791790, 6.937760], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791824, 6.939306], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792104, 6.941322], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792254, 6.943382], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792119, 6.945099], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791525, 6.945743], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790907, 6.945313], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790717, 6.945786], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790309, 6.945120], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789729, 6.944927], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789206, 6.945442], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789680, 6.945528], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790141, 6.945785], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790249, 6.946944], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790238, 6.948017], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790353, 6.948682], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790728, 6.949305], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790877, 6.950013], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790129, 6.949326], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790234, 6.950807], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790605, 6.951054], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790772, 6.951493], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790941, 6.952073], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791072, 6.952845], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790772, 6.953231], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790757, 6.954004], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790477, 6.955056], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790099, 6.954047], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789759, 6.953253], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789246, 6.952459], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788513, 6.951987], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788289, 6.952266], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788756, 6.953210], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788124, 6.953553], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788184, 6.954025], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788954, 6.954937], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788827, 6.955892], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788618, 6.956686], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788468, 6.957737], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788906, 6.958746], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788857, 6.960656], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789097, 6.961900], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789519, 6.962995], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789905, 6.963617], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790058, 6.964475], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.789381, 6.964754], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.788741, 6.965258], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790477, 6.965870], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791794, 6.965698], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792493, 6.966921], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792643, 6.967823], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792003, 6.968874], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791281, 6.969239], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791266, 6.970204], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790952, 6.971127], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.790742, 6.972286], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792164, 6.972329], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.791685, 6.972908], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792164, 6.973123], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.792957, 6.973423], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.793989, 6.974110], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.795085, 6.974410], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.795994, 6.975376], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.797415, 6.976019], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.799094, 6.978294], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.799932, 6.979517], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.800770, 6.980547], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.800979, 6.981405], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.801009, 6.982178], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.800501, 6.982779], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.800665, 6.984109], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.801219, 6.985225], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.801458, 6.985139], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.801323, 6.984538], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.801697, 6.984495], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.801772, 6.983766], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.802162, 6.982886], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.802550, 6.984624], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.803193, 6.984881], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.803059, 6.985933], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.803403, 6.985632], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.803702, 6.985976], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.803747, 6.985504], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.804210, 6.985826], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.804210, 6.985246], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.804539, 6.985311], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.804809, 6.983722], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.805707, 6.984838], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.806021, 6.983744], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.806754, 6.983422], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.806544, 6.982113], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807157, 6.982028], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807262, 6.981287], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807127, 6.979903], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.806963, 6.979217], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807128, 6.978599], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807367, 6.978272], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807419, 6.977470], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.807905, 6.977972], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.808070, 6.977307], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var circle = L.circle([45.808638, 6.977800], {
+                color: 'black',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 50
+            }).addTo(mymap);
+            var marker = L.marker([45.792590, 6.963826]).addTo(mymap);
+            marker.bindPopup("<b>b'Dolonne'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790427, 6.943455]).addTo(mymap);
+            marker.bindPopup("<b>b'Checrouit'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.782670, 6.923597]).addTo(mymap);
+            marker.bindPopup("<b>b'Checrouit'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790926, 6.946208]).addTo(mymap);
+            marker.bindPopup("<b>b'Pra Neyron'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.800401, 6.924420]).addTo(mymap);
+            marker.bindPopup("<b>b'Zerotta'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.798803, 6.939609]).addTo(mymap);
+            marker.bindPopup("<b>b'Zerotta'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790863, 6.931335]).addTo(mymap);
+            marker.bindPopup("<b>b'ColCh\xc3\xa9crouit'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790787, 6.931069]).addTo(mymap);
+            marker.bindPopup("<b>b'Rifugio - Restaurante Maison Vieille'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.793884, 6.937828]).addTo(mymap);
+            marker.bindPopup("<b>b'Rifugio Le Randonneur'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.799694, 6.948803]).addTo(mymap);
+            marker.bindPopup("<b>b'Mont Chetif'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.803751, 6.934732]).addTo(mymap);
+            marker.bindPopup("<b>b'La Grolla'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.789485, 6.935764]).addTo(mymap);
+            marker.bindPopup("<b>b'Aret\xc3\xb9'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.813749, 6.957231]).addTo(mymap);
+            marker.bindPopup("<b>b'Val Veny'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.785589, 6.933066]).addTo(mymap);
+            marker.bindPopup("<b>b'La Greye'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.782313, 6.921435]).addTo(mymap);
+            marker.bindPopup("<b>b'Aret\xc3\xb9'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791268, 6.942731]).addTo(mymap);
+            marker.bindPopup("<b>b'La Chaumi\xc3\xa8re'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.785234, 6.970610]).addTo(mymap);
+            marker.bindPopup("<b>b'Courmayeur'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.806278, 6.948243]).addTo(mymap);
+            marker.bindPopup("<b>b'Val Veny'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790907, 6.933234]).addTo(mymap);
+            marker.bindPopup("<b>b'Maison Vieille'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.802800, 6.946735]).addTo(mymap);
+            marker.bindPopup("<b>b'Peindeint'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.801603, 6.931801]).addTo(mymap);
+            marker.bindPopup("<b>b'Peindeint'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.793073, 6.939038]).addTo(mymap);
+            marker.bindPopup("<b>b'Dzeleuna'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790671, 6.943960]).addTo(mymap);
+            marker.bindPopup("<b>b'Maison Vieille'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.798517, 6.939879]).addTo(mymap);
+            marker.bindPopup("<b>b'Dzeleuna'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791654, 6.947197]).addTo(mymap);
+            marker.bindPopup("<b>b'Dolonne'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.789178, 6.945125]).addTo(mymap);
+            marker.bindPopup("<b>b'Chiecco'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.794058, 6.932951]).addTo(mymap);
+            marker.bindPopup("<b>b'T\xc3\xaate Neyron'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.787989, 6.941894]).addTo(mymap);
+            marker.bindPopup("<b>b'Chiecco'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.798404, 6.938095]).addTo(mymap);
+            marker.bindPopup("<b>b'Courba Dzeleuna'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790732, 6.944897]).addTo(mymap);
+            marker.bindPopup("<b>b'Christiania'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791346, 6.970266]).addTo(mymap);
+            marker.bindPopup("<b>b'Piazzale Monte Bianco'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.803779, 6.934952]).addTo(mymap);
+            marker.bindPopup("<b>b'Peindein'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792295, 6.963975]).addTo(mymap);
+            marker.bindPopup("<b>b'Dolonne'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790635, 6.945368]).addTo(mymap);
+            marker.bindPopup("<b>b'Plan Checrouit'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.801218, 6.984780]).addTo(mymap);
+            marker.bindPopup("<b>b'Raffort'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.799439, 6.978938]).addTo(mymap);
+            marker.bindPopup("<b>b'Villair Damon'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.797266, 6.976297]).addTo(mymap);
+            marker.bindPopup("<b>b'Villair Desot'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.800985, 6.983808]).addTo(mymap);
+            marker.bindPopup("<b>b'Parcheggio della Val Sapin'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.796037, 6.982670]).addTo(mymap);
+            marker.bindPopup("<b>b'Ermitage'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.806734, 6.931693]).addTo(mymap);
+            marker.bindPopup("<b>b'Lassy Desot'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.801105, 6.969905]).addTo(mymap);
+            marker.bindPopup("<b>b'La Saxe'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.789963, 6.965201]).addTo(mymap);
+            marker.bindPopup("<b>b'Dolonne'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.800078, 6.966353]).addTo(mymap);
+            marker.bindPopup("<b>b'Entrelevie'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.798869, 6.970381]).addTo(mymap);
+            marker.bindPopup("<b>b'Larzey'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.793291, 6.965437]).addTo(mymap);
+            marker.bindPopup("<b>b'Les Forges'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791525, 6.971369]).addTo(mymap);
+            marker.bindPopup("<b>b'Du Parc'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791049, 6.971947]).addTo(mymap);
+            marker.bindPopup("<b>b'Fromagi Tipici'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792533, 6.971034]).addTo(mymap);
+            marker.bindPopup("<b>b'Venezia'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791442, 6.948039]).addTo(mymap);
+            marker.bindPopup("<b>b'Courmayeur'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.796125, 6.982803]).addTo(mymap);
+            marker.bindPopup("<b>b'Baita Ermitage'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.799935, 6.950021]).addTo(mymap);
+            marker.bindPopup("<b>b'Statua Madonna'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790462, 6.973534]).addTo(mymap);
+            marker.bindPopup("<b>b'Caff\xc3\xa8 della Posta'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.793975, 6.932683]).addTo(mymap);
+            marker.bindPopup("<b>b'Pra Neyron'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.788139, 6.973637]).addTo(mymap);
+            marker.bindPopup("<b>b'Hotel Cristallo'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790972, 6.972273]).addTo(mymap);
+            marker.bindPopup("<b>b'Carrefour Express'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791812, 6.972586]).addTo(mymap);
+            marker.bindPopup("<b>b'Museo Alpino Duca degli Abruzzi'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790885, 6.971470]).addTo(mymap);
+            marker.bindPopup("<b>b'Ristorante La Padella'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.793134, 6.967043]).addTo(mymap);
+            marker.bindPopup("<b>b"Club Haus 80's Courmayeur"</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791423, 6.970600]).addTo(mymap);
+            marker.bindPopup("<b>b'Ufficio del Turismo'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.789183, 6.964421]).addTo(mymap);
+            marker.bindPopup("<b>b'Lo Nampio'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.789170, 6.964428]).addTo(mymap);
+            marker.bindPopup("<b>b'Lo Nampio'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792186, 6.971726]).addTo(mymap);
+            marker.bindPopup("<b>b'La Terraza'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.794042, 6.970206]).addTo(mymap);
+            marker.bindPopup("<b>b'Enoteca Goio'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790702, 6.973514]).addTo(mymap);
+            marker.bindPopup("<b>b'Le Prive'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.790356, 6.971068]).addTo(mymap);
+            marker.bindPopup("<b>b'Le Vieux Pommieres'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.788976, 6.953412]).addTo(mymap);
+            marker.bindPopup("<b>b'Picea abies'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792661, 6.976291]).addTo(mymap);
+            marker.bindPopup("<b>b'Ristorante Chalet Plan Gorret'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792550, 6.976274]).addTo(mymap);
+            marker.bindPopup("<b>b'Chalet Plan Gorret'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791933, 6.972462]).addTo(mymap);
+            marker.bindPopup("<b>b'Post box'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.797370, 6.968440]).addTo(mymap);
+            marker.bindPopup("<b>b'Al Cumin. Ristorante'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791841, 6.972506]).addTo(mymap);
+            marker.bindPopup("<b>b'Bar delle Guide'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792294, 6.971899]).addTo(mymap);
+            marker.bindPopup("<b>b'Caffetteria cremes et chocolat'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792159, 6.972271]).addTo(mymap);
+            marker.bindPopup("<b>b'zillos'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792293, 6.972414]).addTo(mymap);
+            marker.bindPopup("<b>b'Bar centro'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791784, 6.972410]).addTo(mymap);
+            marker.bindPopup("<b>b'Ardi Sport'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.792044, 6.971337]).addTo(mymap);
+            marker.bindPopup("<b>b'pizzeria'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791250, 6.971553]).addTo(mymap);
+            marker.bindPopup("<b>b'Biverbanca'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.793493, 6.971304]).addTo(mymap);
+            marker.bindPopup("<b>b'Lo scoiattolo'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791174, 6.973213]).addTo(mymap);
+            marker.bindPopup("<b>b'Dahu'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.791132, 6.972882]).addTo(mymap);
+            marker.bindPopup("<b>b'la piazzetta'</b><br>TODO: get from dbpedia").openPopup();
+            var marker = L.marker([45.803029, 6.967311]).addTo(mymap);
+            marker.bindPopup("<b>b'Carrefour Express'</b><br>TODO: get from dbpedia").openPopup();
+
+            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+            }).addTo(mymap);
+        </script>
+    </body>
+</html>
