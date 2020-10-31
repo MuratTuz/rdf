@@ -1,180 +1,304 @@
-# This is a sample Python script.
-import rdflib, pprint
-from rdflib.plugins import sparql
-from rdflib import URIRef, Graph
-from rdflib import Namespace
-from rdflib.namespace import XSD, RDF, RDFS
-import gpxpy
-import gpxpy.gpx
-import requests
-import xml.etree.ElementTree as ET
-from SPARQLWrapper import SPARQLWrapper2
-import SPARQLWrapper
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#! /usr/bin/env python
 
-def get_osm_file(variance):
-    response = requests.get(f'https://api.openstreetmap.org/api/0.6/map?bbox='
-                            f'{variance[0]},{variance[1]},{variance[2]},{variance[3]}')
-    with open('deneme.osm','w', encoding='utf-8') as file_osm:
-         file_osm.write(response.text)
+import sys, io
 
-    file_rdf = open('gpx_osm_rdf.ttl', 'a', encoding='utf-8')
-    data = ET.parse('deneme.osm')
+try:
+    from glob import glob
+    from rdflib.plugins import sparql
+    from rdflib import URIRef, Graph, Literal
+    from rdflib import Namespace
+    from rdflib.namespace import XSD, RDF, RDFS, OWL, FOAF
+except ImportError:
+    print
+    'Please install rdflib'
+    sys.exit(1)
+try:
+    import gpxpy.gpx
+except ImportError:
+    print
+    'Please install gpxpy'
+    sys.exit(1)
+try:
+    import requests
+except ImportError:
+    print
+    'Please install requests'
+    sys.exit(1)
+try:
+    import xml.etree.ElementTree as ET
+except ImportError:
+    print
+    'Please install xml'
+    sys.exit(1)
+try:
+    from SPARQLWrapper import SPARQLWrapper, JSON
+except ImportError:
+    print
+    'Please install SPARQLWrapper'
+    sys.exit(1)
+
+gpxFileName = 'GPX_Tracks/4sDDFdd4cjA.gpx'  # file with track points
+rdfFileName = 'gpx_osm_rdf.ttl'  # rdf file containing track points and interesting venues
+
+osmFileName = 'deneme.osm'  # temporary file from openstreetmap
+
+
+def createHtmlFile(variance, mapName, points, venues):
+    with open('website_%s.html'%mapName, 'w') as f:
+        f.write('<!DOCTYPE html>\n')
+        f.write('<html>\n')
+        f.write('    <head>\n')
+        f.write('        <title>OpenStreetmap with RDF</title>\n')
+        f.write(
+            '        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>\n')
+        f.write(
+            '        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>\n')
+        f.write('    </head>\n')
+        f.write('    <body>\n')
+        f.write('        <div id="mapid" style="width: 800px; height: 600px;"></div>\n')
+        f.write('        <script>\n')
+        # build the map
+        f.write('            var mymap = L.map("mapid").setView([%.6f, %.6f], 13);\n' % (
+        (variance[3] + variance[1]) / 2,
+        (variance[2] + variance[0]) / 2))  # last number is zoom, could be adapted more accurately from overall map size
+        # add the markers
+        for point in points:
+            f.write('            var circle = L.circle([%.6f, %.6f], {\n' % (point.latitude, point.longitude))
+            f.write('                color: \'black\',\n')
+            f.write('                fillColor: \'#f03\',\n')
+            f.write('                fillOpacity: 0.5,\n')
+            f.write('                radius: 50\n')
+            f.write('            }).addTo(mymap);\n')
+        for point, title, description in venues:
+            f.write('            var marker = L.marker([%.6f, %.6f]).addTo(mymap);\n' % (point[0], point[1]))
+            f.write('            marker.bindPopup("<b>%s</b><br>%s").openPopup();\n' % (title, description))
+        f.write(
+            '\n            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {\n')
+        f.write('            maxZoom: 18,\n')
+        f.write(
+            '            attribution: \'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery <a href="https://www.mapbox.com/">Mapbox</a>\',\n')
+        f.write('            id: \'mapbox/streets-v11\',\n')
+        f.write('            tileSize: 512,\n')
+        f.write('            zoomOffset: -1\n')
+        f.write('            }).addTo(mymap);\n')
+        #
+        f.write('        </script>\n')
+        # f.write('        <iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=%.6f%%2C%.6f%%2C%.6f%%2C%.6f&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>\n'%(variance[0],variance[1],variance[2],variance[3]))
+        # f.write('        <small><a href="https://www.openstreetmap.org/#map=13/%.6f/%.6f">View larger map</a></small>\n'%((variance[3]+variance[1])/2,(variance[2]+variance[0])/2)) # first number is zoom, could be adapted more accurately from overall map size
+        f.write('    </body>\n')
+        f.write('</html>\n')
+    f.close()
+
+
+def get_osm_file(variance, gpxFile, rdfFile):
+    #
+
+    # This function get osm file form api.openstreetmap
+
+    # and adds nodes to the existed file which has been produced before using with gpx
+
+    # @parameter 'variance' is the value of lat and lon max and min
+
+    #
+
+    response = requests.get('https://api.openstreetmap.org/api/0.6/map?bbox=%.6f,%.6f,%.6f,%.6f' % (
+    variance[0], variance[1], variance[2], variance[3]))
+    with io.open(osmFileName, 'w', encoding='utf8') as f:
+        f.write(response.text)
+    f.close()
+
+    data = ET.parse(osmFileName)
+
     root = data.getroot()
-    node_str = ''
-    tag_str = ''
-    for node in root.iter('node'):
-        if node.attrib['visible'] == 'true': # check if the place is still accessible
 
-            #print(node.attrib['lat'], node.attrib['lon'], node.attrib['id'])
-            for tag in node.iter('tag'):
-                # if node has tag then register it
-                node_str = 'osm:node rdf:type osm:node; geo:lat "{}"^^xsd:float; ' \
-                           'geo:lon "{}"^^xsd:float; osm:id "{}"^^xsd:int.\n' \
-                           ''.format(node.attrib['lat'], node.attrib['lon'], node.attrib['id'])
-                tag_str += 'osm:tag osm:id "{}"^^xsd:int; osm:key "{}"; osm:val "{}".\n' \
-                           ''.format(node.attrib['id'], tag.attrib['k'], tag.attrib['v'])
-                #print(tag.attrib['k'], tag.attrib['v'])
-        file_rdf.write(node_str) ; file_rdf.write(tag_str)
-        node_str = ''; tag_str = ''
-    file_rdf.close()
+    venues = []
 
-def gpx_reader():
-    # Parsing an existing file:
-    # -------------------------
+    with io.open(rdfFile, 'a', encoding='utf8') as f:
 
-    gpx_file = open('4sDDFdd4cjA.gpx', 'r', encoding='utf-8')
+        for node in root.iter('node'):
+
+            if node.attrib['visible'] == 'true':  # check if the place is still accessible
+
+                f.write((
+                                    ':api osm:node _:a. _:a rdf:type rdf:seq; geo:lat "%s"^^xsd:float; geo:lon "%s"^^xsd:float; osm:id "%s"^^xsd:int.\n' % (
+                            node.attrib['lat'], node.attrib['lon'], node.attrib['id'])).encode('utf-8').decode('utf8'))
+
+                for tag in node.iter('tag'):
+
+                    f.write((u''.join(('_:a osm:tag _:t. _:t osm:key "%s"; osm:val "%s".\n' % (
+                    tag.attrib['k'], tag.attrib['v']))).encode('utf-8')).decode('utf8'))
+                    if tag.attrib['k'] == 'name': venues.append(((float(node.attrib['lat']), float(node.attrib['lon'])),
+                                                                 tag.attrib['v'].encode('utf-8'),
+                                                                 "TODO: get from dbpedia"))
+
+    f.close()
+    return venues
+
+
+def gpx_reader(gpxFile):
+    # Parsing an existing file of gpx:
+
+    # this function is being used just for getting latitude and longitude (max and min)
+
+    gpx_file = open(gpxFile, 'r')
 
     gpx = gpxpy.parse(gpx_file, version='1.1')
 
 
-    '''for track in gpx.tracks:
-        for segment in track.segments:
-            for point in segment.points:
-                print('Point at ({0},{1}) -> {2}'.format(point.latitude, point.longitude, point.elevation))
 
-
-    for waypoint in gpx.waypoints:
-        print('waypoint {0} -> ({1},{2})'.format(waypoint.name, waypoint.latitude, waypoint.longitude))
-
-    for route in gpx.routes:
-        print('Route:')
-        for point in route.points:
-            print('Point at ({0},{1}) -> {2}'.format(point.latitude, point.longitude, point.elevation))'''
-
-    # There are many more utility methods and functions:
-    # You can manipulate/add/remove tracks, segments, points, waypoints and routes and
-    # get the GPX XML file from the resulting object:
-
-    #print('GPX:', gpx.to_xml())
     list_trackpoints = gpx.tracks[0].segments[0].points
-    #print(type(list_trackpoints[0].latitude))
-    #print(max(list_trackpoints.latitude, key=lambda x: list_trackpoints[x]))
+
+    return list_trackpoints
+
+    # print(type(list_trackpoints[0].latitude))
+
+    # print(max(list_trackpoints.latitude, key=lambda x: list_trackpoints[x]))
+
+
+
+def make_rdf(gpxFile, rdfFile):
+    #
+
+    # This function makes the rdf triple (a simple version) writing in file
+
+    #
+
+    data = ET.parse(gpxFile)
+
+    root = data.getroot()
+
+    rdf_str = '{http://www.topografix.com/GPX/1/1}'
+
+    file = open(rdfFile, 'w')
+
+    file_str = ''
+
+    file_prefix = '@prefix xsd: <http://w3.org/2001/XMLSchema#>.\n' + '@prefix rdf: <http://w3.org/1999/02/22-rdf-syntax-ns#>.\n' + '@prefix rdfs: <http://w3.org/2000/01/rdf-schema#>.\n' + '@prefix geo: <https://w3.org/wiki/GeoRDF#>.\n' + '@prefix wikidata: <https://www.wikidata.org/wiki/>.\n' + '@prefix dbpedia: <http://dbpedia.org/ontology/>.\n' + '@prefix osm: <http://openstreetmap.org/export/>.\n' + '@prefix api: <https://api.openstreetmap.org/api/0.6/map?bbox=#>.\n' + '@prefix : <http://topografix.com/GPX/1/1/>.\n\n\n'
+
+    file.write(file_prefix)
+
+    trk_name = root.find('{}trk//{}name'.format(rdf_str, rdf_str)).text
+
+    file.write(':trk :name "{}".\n\n'.format(trk_name))
+
+    for index, trkpt in enumerate(root.iter(tag='{}trkpt'.format(rdf_str))):
+
+        # print(':{}'.format(trkpt.tag[len(rdf_str):]))
+
+        file_str += ':{}'.format(trkpt.tag[len(rdf_str):])
+
+        file_str += ' rdf:type {};'.format(':ptType')
+
+        for k, element in enumerate(trkpt.attrib.items()):
+            file_str += ' geo:{} "{}"^^xsd:float;'.format(element[0], element[1])  # lat lon
+
+            # print(' :{} {};'.format(element[0], element[1]))
+
+            # print(element.tag)
+
+        # print(':id {}.'.format(index))
+
+        file_str += ' :id "{}"^^xsd:int.\n'.format(index)
+
+        file.write(file_str)
+
+        file_str = ''
+
+    file.close()
+
+
+
+
+
+def rdf_make(tagIds):
+    #
+
+    # Sparql query but not working yet
+
+    #
+
+    # sparql = SPARQLWrapper('http://dbpedia.org/sparql')
+
+    # sparql.setQuery('''
+
+    # PREFIX dbo: <http://dbpedia.org/ontology/>
+
+    # PREFIX file: <https://github.com/MuratTuz/rdf/blob/main/>
+
+    # select ?node
+
+    # where { file:osm:node
+
+    #     ''')
+
+    # from SPARQLWrapper import SPARQLWrapper, JSON
+
+    sparql = SPARQLWrapper("<https://github.com/MuratTuz/rdf/blob/main/gpx_osm_rdf.ttl>")
+
+    queryTourism = """
+        PREFIX dbp: <http://dbpedia.org/resource/classes#>.
+
+        SELECT DISTINCT ?place
+
+        WHERE {?tags osm:key ?place.
+        filter(?place=dbp:tourism)}"""
+
+    for id in tagIds:
+        # queryTrkPoint="""
+        # SELECT DISTINCT ?trkpt ?pt_lat ?pt_long ?nd_lat ?nd_lon ?name ?place
+
+        # WHERE {?trkpt rdf:type :trkType. ?trkpt :hassurroundings osm:nd%s; :haslat ?pt_lat; :haslon ?pt_lon.
+        # osm:nd%s osm:hasname ?name; osm:haslat ?nd_lat; osm:haslon ?nd_lon; osm:amenity ?place.}"""%(id,id)
+
+        queryTrkPoint = """
+        select * where { ?osm osmt:place ?place. }"""
+
+        print('---------------------------')
+        print('id %s' % id)
+        sparql.setQuery(queryTrkPoint)
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+
+        print('---------------------------')
+        for result in results["results"]["bindings"]:
+            print(result["label"]["value"])
+
+        print('---------------------------')
+
+    # for tag in tagNames:
+    #     print('---------------------------')
+    #     print('Tag %s'%tag)
+    #     sparql.setQuery("""
+    #         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    #         SELECT ?label
+    #         WHERE { <http://dbpedia.org/resource/%s> rdfs:label ?label }
+    #     """%tag)
+    #     sparql.setReturnFormat(JSON)
+    #     results = sparql.query().convert()
+
+    #     print('---------------------------')
+    #     for result in results["results"]["bindings"]:
+    #         print(result["label"]["value"])
+
+    #     print('---------------------------')
+
+
+if __name__ == '__main__':
+    # retrieve track points from gxpFile
+    files = glob('*.gpx')
+    list_trackpoints = gpx_reader(gpxFileName)
+
+    # calculate part of map to be shown
     latitude_max = max(point.latitude for point in list_trackpoints)
     latitude_min = min(point.latitude for point in list_trackpoints)
     longitude_max = max(point.longitude for point in list_trackpoints)
     longitude_min = min(point.longitude for point in list_trackpoints)
-    return (longitude_min,latitude_min,longitude_max,latitude_max)
+    variance = (longitude_min, latitude_min, longitude_max, latitude_max)
 
-    # Creating a new file:
-    # --------------------
+    make_rdf(gpxFileName, rdfFileName)
 
-    '''gpx = gpxpy.gpx.GPX()
+    # TODO: the venue description is filled by a default value inside get_osm_file()
+    # however, it should be filled with info from dbpedia retrieved via SPARQLWrapper?!
+    venues = get_osm_file(variance, gpxFileName, rdfFileName)
 
-    # Create first track in our GPX:
-    gpx_track = gpxpy.gpx.GPXTrack()
-    gpx.tracks.append(gpx_track)
-
-    # Create first segment in our GPX track:
-    gpx_segment = gpxpy.gpx.GPXTrackSegment()
-    gpx_track.segments.append(gpx_segment)
-
-    # Create points:
-    gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(2.1234, 5.1234, elevation=1234))
-    gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(2.1235, 5.1235, elevation=1235))
-    gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(2.1236, 5.1236, elevation=1236))
-
-    # You can add routes and waypoints, too...
-
-    print('Created GPX:', gpx.to_xml())'''
-
-def rdf_reader(file):
-    graph = rdflib.Graph()
-    graph.load(file, format='xml')
-    '''for s, p, o in graph:
-        print(s)'''
-
-def usage(name):
-    # daha sonra yaz.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-def make_rdf():
-    data = ET.parse('C:\\Users\\murat\\OneDrive\\Documents\\UniGE\\Master\\Semantic_Web\\GPX2RDF-20201003\\GPX_Tracks\\GPX_Tracks\\4sDDFdd4cjA.gpx')
-    root = data.getroot()
-    rdf_str ='{http://www.topografix.com/GPX/1/1}'
-    file = open('gpx_osm_rdf.ttl','w', encoding='utf-8')
-    file_str =''
-    file_prefix ='@prefix xsd: <http://w3.org/2001/XMLSchema#>.\n' \
-                 '@prefix rdf: <http://w3.org/1999/02/22-rdf-syntax-ns#>.\n' \
-                 '@prefix rdfs: <http://w3.org/2000/01/rdf-schema#>.\n' \
-                 '@prefix geo: <https://w3.org/wiki/GeoRDF#>.\n' \
-                 '@prefix wikidata: <https://www.wikidata.org/wiki/>.\n' \
-                 '@prefix dbpedia: <http://dbpedia.org/ontology/>.\n'    \
-                 '@prefix osm: <http://openstreetmap.org/export/>.\n'   \
-                 '@prefix : <http://topografix.com/GPX/1/1/>.\n\n\n'
-
-    file.write(file_prefix)
-
-    trk_name = root.find('{}trk//{}name'.format(rdf_str,rdf_str)).text
-    file.write(':trk :name "{}".\n\n'.format(trk_name))
-
-    for index, trkpt in enumerate(root.iter(tag='{}trkpt'.format(rdf_str))):
-        #print(':{}'.format(trkpt.tag[len(rdf_str):]))
-        file_str += ':{}'.format(trkpt.tag[len(rdf_str):])
-        file_str += ' rdf:type {};'.format(':ptType')
-        for k, element in enumerate(trkpt.attrib.items()):
-            file_str += ' geo:{} "{}"^^xsd:float;'.format(element[0], element[1]) # lat lon
-            #print(' :{} {};'.format(element[0], element[1]))
-            #print(element.tag)
-        #print(':id {}.'.format(index))
-        file_str += ' :id "{}"^^xsd:int.\n'.format(index)
-        file.write(file_str)
-        file_str = ''
-    file.close()
-
-def get_query():
-
-    g = rdflib.Graph()
-
-
-    tp_rdf = Namespace('http://topografix.com/GPX/1/1/')
-    g.bind(':',tp_rdf)
-    g.bind('osm:', 'http://openstreetmap.org/export/')
-    g.bind('xsd:', XSD)
-    g.bind('geo:', 'https://w3.org/wiki/GeoRDF#')
-    g.bind('rdf:', RDF)
-    g.bind('rdfs:', RDFS)
-
-    #g.parse('gpx_osm_rdf.ttl', format='ttl')
-    #g.add((URIRef(tp_rdf.trkpt))
-    query = '''    
-    select distinct ?p
-    where { osm:node rdf:type :ptType} '''
-    g.query(query)
-    #g = sparql.setQuery(query)
-    for str in g:
-        print(rdflib.term.Literal(str).value)
-# Press the green button in the gutter to run the script.
-
-def rdf_make():
-    g = rdflib.Graph()
-
-if __name__ == '__main__':
-
-    variance = gpx_reader()
-    make_rdf()
-    get_osm_file(variance)
-    #get_query()
-
-
+    #createHtmlFile(variance, gpxFileName.replace('.gpx', ''), list_trackpoints, venues)
